@@ -9,6 +9,8 @@ using System.Threading;
 using SuperSocket.ClientEngine;
 using Newtonsoft.Json;
 using SKKey.task;
+using SKKey.utils;
+
 namespace SKKey.websocket
 {
     class TaskWebsocketClient
@@ -87,9 +89,39 @@ namespace SKKey.websocket
         {
             websocket.Send(JsonConvert.SerializeObject(taskSocketMessage));
         }
+        class Login
+        {
+            public string GUID { get; set; }
+
+            public string CompanyName { get; set; }
+
+            public string ACTION { get; set; }
+
+            public List<string> TaxCodeList { get; set; }
+
+            public string TIME { get; set; }
+        }
+
 
         private void websocket_Opened(object sender, EventArgs e)
         {
+            TaskSocketMessage tsm = new TaskSocketMessage();
+            tsm.type = "initDevice";
+            tsm.request = true;
+            tsm.createTime  = DateTimeUtil.getSystemTimestampMilli();
+
+            Login _login = new Login();
+
+            _login.GUID = "{B69392DF-209B-4102-819B-3C34D9969B85}";
+            _login.CompanyName = "";
+            _login.ACTION = "1";
+            _login.TaxCodeList = new List<string>();
+            _login.TaxCodeList.Add("91500000747150540A");
+            _login.TIME = "2017-06-30 09:09:09";
+            tsm.content = JsonConvert.SerializeObject(_login);
+            log.Info("ydz：" + JsonConvert.SerializeObject(tsm));
+            websocket.Send(JsonConvert.SerializeObject(tsm));
+
             log.Info("taskserver 已打开");
             instance.connected = true;
         }
