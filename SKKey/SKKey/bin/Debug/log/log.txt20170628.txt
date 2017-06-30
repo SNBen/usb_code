@@ -1,0 +1,59 @@
+2017-06-28 15:19:44,932 [1] INFO  SKKey.config.ConfigManager [57] - load 配置文件 C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-06-28 15:19:45,194 [1] INFO  SKKey.config.ConfigManager [80] - 配置载入成功
+2017-06-28 15:19:45,213 [1] INFO  SKKey.config.ConfigManager [86] - load 配置文件 C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-06-28 15:19:45,215 [1] INFO  SKKey.config.ConfigManager [89] - 配置文件不存在
+2017-06-28 15:46:03,573 [1] INFO  SKKey.socket.UsbclubOperator [41] - 打开端口信息：System.String[]-cmdStr:00000011803036383032303030323338390000000D
+2017-06-28 15:46:03,858 [1] INFO  SKKey.socket.UsbclubOperator [177] - 申请打开端口, ip:127.0.0.1, port:8110, cmd:00000011803036383032303030323338390000000D
+2017-06-28 15:46:04,063 [1] INFO  SKKey.socket.UsbclubOperator [193] - 申请端口打开，返回头信息00000001
+2017-06-28 15:46:04,064 [1] INFO  SKKey.socket.UsbclubOperator [200] - 申请端口打开，返回hex数据：A0
+2017-06-28 15:46:04,133 [1] INFO  SKKey.socket.UsbclubOperator [219] - 申请打开端口结果解析成集合：jgm:A0;
+2017-06-28 15:46:06,134 [1] INFO  SKKey.socket.UsbclubOperator [69] - 打开端口对外返回结果：result:0;msg:打开端口成功;
+2017-06-28 15:55:39,571 [1] INFO  SKKey.socket.UsbclubOperator [41] - 打开端口信息：System.String[]-cmdStr:00000011803036383032303030323338390000000D
+2017-06-28 15:55:39,901 [1] INFO  SKKey.socket.UsbclubOperator [177] - 申请打开端口, ip:127.0.0.1, port:8110, cmd:00000011803036383032303030323338390000000D
+2017-06-28 15:55:39,999 [1] INFO  SKKey.socket.UsbclubOperator [193] - 申请端口打开，返回头信息00000001
+2017-06-28 15:55:40,000 [1] INFO  SKKey.socket.UsbclubOperator [200] - 申请端口打开，返回hex数据：A0
+2017-06-28 15:55:40,010 [1] INFO  SKKey.socket.UsbclubOperator [219] - 申请打开端口结果解析成集合：jgm:A0;
+2017-06-28 15:55:42,011 [1] INFO  SKKey.socket.UsbclubOperator [69] - 打开端口对外返回结果：result:0;msg:打开端口成功;
+2017-06-28 15:55:42,464 [1] ERROR SKKey.task.TokenTask [89] - 未能加载文件或程序集“AxInterop.Cryp_Ctl, Version=147.1.0.0, Culture=neutral, PublicKeyToken=null”或它的某一个依赖项。生成此程序集的运行时比当前加载的运行时新，无法加载此程序集。
+System.BadImageFormatException: 未能加载文件或程序集“AxInterop.Cryp_Ctl, Version=147.1.0.0, Culture=neutral, PublicKeyToken=null”或它的某一个依赖项。生成此程序集的运行时比当前加载的运行时新，无法加载此程序集。
+文件名:“AxInterop.Cryp_Ctl, Version=147.1.0.0, Culture=neutral, PublicKeyToken=null”
+   在 SKKey.ocx.WebOcxAccess.openAndGetCert(String password)
+   在 SKKey.task.TokenTask.getTocken(String ym, String ymbb, String sh, String password, String rwId) 位置 C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\task\TokenTask.cs:行号 85
+
+=== 预绑定状态信息 ===
+日志: 用户 = xiongjun-PC\xiongjun
+日志: DisplayName = AxInterop.Cryp_Ctl, Version=147.1.0.0, Culture=neutral, PublicKeyToken=null
+ (Fully-specified)
+日志: Appbase = file:///C:/Users/xiongjun/Desktop/usb_code/SKKey/SKKey/bin/Debug/
+日志: 初始 PrivatePath = NULL
+调用程序集: SKKey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\bin\Debug\SKKey.exe.Config
+日志: 使用 C:\Windows\Microsoft.NET\Framework\v2.0.50727\config\machine.config 的计算机配置文件。
+日志: 此时没有为引用应用策略(私有、自定义、分部或基于位置的程序集绑定)。
+日志: 试图下载新的 URL file:///C:/Users/xiongjun/Desktop/usb_code/SKKey/SKKey/bin/Debug/AxInterop.Cryp_Ctl.DLL。
+错误: 未能完成程序集的安装(hr = 0x8013101b)。探测终止。
+
+2017-06-28 16:17:49,497 [1] INFO  SKKey.socket.UsbclubOperator [41] - 打开端口信息：System.String[]-cmdStr:00000011803036383032303030323338390000000D
+2017-06-28 16:17:49,935 [1] INFO  SKKey.socket.UsbclubOperator [177] - 申请打开端口, ip:127.0.0.1, port:8110, cmd:00000011803036383032303030323338390000000D
+2017-06-28 16:17:50,722 [1] INFO  SKKey.socket.UsbclubOperator [193] - 申请端口打开，返回头信息00000001
+2017-06-28 16:17:50,722 [1] INFO  SKKey.socket.UsbclubOperator [200] - 申请端口打开，返回hex数据：A0
+2017-06-28 16:17:50,793 [1] INFO  SKKey.socket.UsbclubOperator [219] - 申请打开端口结果解析成集合：jgm:A0;
+2017-06-28 16:17:52,794 [1] INFO  SKKey.socket.UsbclubOperator [69] - 打开端口对外返回结果：result:0;msg:打开端口成功;
+2017-06-28 16:17:54,091 [1] INFO  SKKey.ocx.WebOcxAccess [39] - 打开设备
+2017-06-28 16:17:54,157 [1] ERROR SKKey.task.TokenTask [89] - WebOcxAccess 没有被初始化
+System.Exception: WebOcxAccess 没有被初始化
+   在 SKKey.ocx.WebOcxAccess.get_Instance() 位置 C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\ocx\WebOcxAccess.cs:行号 26
+   在 SKKey.ocx.WebOcxAccess.close() 位置 C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\ocx\WebOcxAccess.cs:行号 60
+   在 SKKey.ocx.WebOcxAccess.openAndGetCert(String password) 位置 C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\ocx\WebOcxAccess.cs:行号 40
+   在 SKKey.task.TokenTask.getTocken(String ym, String ymbb, String sh, String password, String rwId) 位置 C:\Users\xiongjun\Desktop\usb_code\SKKey\SKKey\task\TokenTask.cs:行号 85
+2017-06-28 16:53:06,449 [1] INFO  SKKey.socket.UsbclubOperator [41] - 打开端口信息：System.String[]-cmdStr:00000011803036383032303030323338390000000D
+2017-06-28 16:53:07,216 [1] INFO  SKKey.socket.UsbclubOperator [177] - 申请打开端口, ip:127.0.0.1, port:8110, cmd:00000011803036383032303030323338390000000D
+2017-06-28 16:53:13,141 [1] INFO  SKKey.socket.UsbclubOperator [193] - 申请端口打开，返回头信息00000001
+2017-06-28 16:53:13,142 [1] INFO  SKKey.socket.UsbclubOperator [200] - 申请端口打开，返回hex数据：A0
+2017-06-28 16:53:13,178 [1] INFO  SKKey.socket.UsbclubOperator [219] - 申请打开端口结果解析成集合：jgm:A0;
+2017-06-28 16:53:15,179 [1] INFO  SKKey.socket.UsbclubOperator [69] - 打开端口对外返回结果：result:0;msg:打开端口成功;
+2017-06-28 16:53:21,862 [1] INFO  SKKey.ocx.WebOcxAccess [39] - 打开设备
+2017-06-28 16:53:23,012 [1] ERROR SKKey.task.TokenTask [89] - 引发类型为“System.Windows.Forms.AxHost+InvalidActiveXStateException”的异常。
+此时无法调用方法“IsDeviceOpened”。

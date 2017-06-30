@@ -1,0 +1,4 @@
+2017-06-30 10:16:37,238 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 10:16:37,255 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 10:16:37,258 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 10:16:37,258 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在

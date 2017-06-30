@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<Root>
+	<Item>
+		<USBID>0680220002389</USBID>
+		<!--<IP>192.168.101.222</IP>-->
+		<USBPort>13</USBPort>
+		<TaxCode>91500000747150540A</TaxCode>
+		<PWD>88888888</PWD>
+	</Item>
+</Root>

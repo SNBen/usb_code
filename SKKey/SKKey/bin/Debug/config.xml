@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  
+  <!--客户端类型-->
+  <client-type>usb</client-type>
+  
+  <!--任务中心地址-->
+  <task-server>ws://123.57.0.66:7088/websocket</task-server>
+  
+  <!--机柜端口-->
+  <usb-club-port></usb-club-port>
+  
+</config>
