@@ -23,7 +23,7 @@ namespace SKKey
             Mutex m = new Mutex(false, Application.ProductName, out bCreatedNew);
             if (!bCreatedNew)
             {
-                MessageBox.Show("此程序已运行！");
+                MessageBox.Show("此程序已运行!");
                 return;
             }
             Config config = ConfigManager.Instance.Config;
@@ -31,7 +31,7 @@ namespace SKKey
             Process[] proc = Process.GetProcessesByName("SKKeyWatch");
             if (proc.Length == 0)
             {
-                System.Diagnostics.ProcessStartInfo Info = new System.Diagnostics.ProcessStartInfo();
+                var Info = new System.Diagnostics.ProcessStartInfo();
                 Info.FileName = "SKKeyWatch.exe";
                 Info.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
 

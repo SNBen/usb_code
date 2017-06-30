@@ -9,7 +9,8 @@ namespace SKKey.task
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public static string GET_TOKEN = "JX_CLIENT_GETSESSIONCLIENTTASK";
+        public static string GET_TOKEN = "pushTask";
+        //public static string GET_TOKEN = "JX_CLIENT_GETSESSIONCLIENTTASK";
         public static string POST_TOKEN = "JX_CLIENT_SUBMITTASKRESULT";
 
         public TaskHandle()

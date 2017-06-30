@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using WebSocket4Net;
+﻿using Newtonsoft.Json;
 using SKKey.config;
-
-using System.Threading;
-using SuperSocket.ClientEngine;
-using Newtonsoft.Json;
 using SKKey.task;
 using SKKey.utils;
+using SuperSocket.ClientEngine;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
+using System;
+using WebSocket4Net;
 
 namespace SKKey.websocket
 {
@@ -120,7 +118,7 @@ namespace SKKey.websocket
             _login.TIME = "2017-06-30 09:09:09";
             tsm.content = JsonConvert.SerializeObject(_login);
             log.Info("ydz：" + JsonConvert.SerializeObject(tsm));
-            websocket.Send(JsonConvert.SerializeObject(tsm));
+            send(tsm);
 
             log.Info("taskserver 已打开");
             instance.connected = true;
@@ -169,6 +167,7 @@ namespace SKKey.websocket
             try
             {
                 msg = JsonConvert.DeserializeObject<TaskSocketMessage>(e.Message);
+                log.Info("content：" + msg.content);
             }
             catch (Exception exp) 
             {
@@ -178,10 +177,7 @@ namespace SKKey.websocket
             {
                 return;
             }
-            Thread thread = new Thread(delegate()
-            {
-                handleMessage(msg);
-            });
+            Thread thread = new Thread(delegate(){handleMessage(msg);});
             thread.Name = "MessageReceived:" + thread.GetHashCode();
             thread.Start();
         }
