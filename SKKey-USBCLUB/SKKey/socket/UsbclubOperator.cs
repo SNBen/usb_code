@@ -9,7 +9,8 @@ namespace SKKey.socket
 {
     internal class UsbclubOperator
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog log 
+            = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private const string OPEN_PORT_CMD_PRE = "0000001180";
         private const string CLOSE_PORT_CMD_PRE = "0000001181";
@@ -18,22 +19,24 @@ namespace SKKey.socket
         private const int REMOTE_CONL_PORT = 8110;
         private const string STR_QZGBDK_JGM_A1 = "A1";
 
+        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Init", CharSet = CharSet.Auto)]
+        public static extern int USBShareUnit_Init();
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "OpenUSBPortByID", CharSet = CharSet.Auto)]
+        public static extern int OpenUSBPortByID(int nUSBPort, ref String strIPAddrPort);
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "CloseUSBPortByID", CharSet = CharSet.Auto)]
+        public static extern int CloseUSBPortByID(int nUSBPort, bool bCompulsive, ref String strIPAddrPort);
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Fini", CharSet = CharSet.Auto)]
+        public static extern int USBShareUnit_Fini();
+
         /**
          * 根据机柜管理器，发送的端口信息字符串，打开端口
          * 068020002389_127.0.0.1_8
          * dictionary result:0 成功
          *            result:非0 失败  msg:错误信息
          */
-
-        [DllImport("USBShareUnit.dll", EntryPoint = "OpenUSBPortByID", CharSet = CharSet.Auto)]
-        public static extern int OpenUSBPortByID(int nUSBPort,          ref String strIPAddrPort);
-
-        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Init", CharSet = CharSet.Auto)]
-        public static extern int USBShareUnit_Init();
-
-        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Fini", CharSet = CharSet.Auto)]
-        public static extern int USBShareUnit_Fini();
-        
 
         public static Dictionary<string, string> openPort(string portInfo)
         {
@@ -83,7 +86,6 @@ namespace SKKey.socket
         /**
         * 根据机柜端口信息，关闭端口
         */
-
         public static Dictionary<string, string> closePort(string portInfo)
         {
             Dictionary<string, string> resultMap = new Dictionary<string, string>();
@@ -129,7 +131,6 @@ namespace SKKey.socket
         /**
          * tcp连接机柜，申请关闭端口
          */
-
         private static Dictionary<string, string> closeUsbPort(string ip, int port, string cmdStr)
         {
             log.Info("申请关闭端口, ip:" + ip + ", port:" + port + ", cmd:" + cmdStr);

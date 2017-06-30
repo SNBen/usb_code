@@ -65,5 +65,28 @@ namespace SKKey.utils
                 return false;
             }
         }
+
+
+        public static bool GetParamByTaxCodeEx(String TaxCode, ref int USBPort,ref String USBID,ref String PWD)
+        {
+            XPathDocument doc = new XPathDocument("USBData.xml");
+            XPathNavigator xPathNav = doc.CreateNavigator();
+            String str = String.Format("/Root/Item[TaxCode = '{0}']", TaxCode);
+            //使用xPath取rss中最新的10条随笔
+
+            XPathNodeIterator nodeIterator = xPathNav.Select(str);
+            if (nodeIterator.MoveNext())
+            {
+                XPathNavigator itemNav = nodeIterator.Current;
+                USBPort = int.Parse(itemNav.SelectSingleNode("USBPort").Value);
+                USBID = String.Format("{0}:10001:3240", itemNav.SelectSingleNode("USBIP").Value);
+                PWD = itemNav.SelectSingleNode("PWD").Value;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

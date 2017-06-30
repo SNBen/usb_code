@@ -63,7 +63,6 @@ namespace SKKey.form
         public void onClose()
         {
             Process[] procs = Process.GetProcessesByName("SKKeyWatch");
-
             foreach (Process proc in procs)
             {
                 try
@@ -130,26 +129,23 @@ namespace SKKey.form
             MessageBox.Show(String.Format("{0}", iResult));
 
             String sh = SH_textBox.Text;
-            String password = null;
+            String pwd = null;
             String portInfo = null;
 
-            XmlUtil.GetParamByTaxCode(sh, ref portInfo, ref password);
-            Dictionary<String, String> openInfo = UsbclubOperator.openPort(portInfo);
+            XmlUtil.GetParamByTaxCode(sh, ref portInfo, ref pwd);
+            var openInfo = UsbclubOperator.openPort(portInfo);
             if (!"0".Equals(openInfo["result"]))
             {
                 log.Error("打开设备失败：" + openInfo);
-                TaskSocketMessage returnSocketMessage = new TaskSocketMessage();
-                returnSocketMessage.type = TaskHandle.POST_TOKEN;
             }
 
-            TaskSocketMessage returnTaskSocketMessage 
-                = new TokenTask().getTocken("https://fpdk.cqsw.gov.cn/", "3.0.09", sh, password, "1");
+            var tsM = new TokenTask().getTocken("https://fpdk.cqsw.gov.cn/", "3.0.09", sh, pwd, "1");
 
             if (portInfo != null)
             {
                 UsbclubOperator.closePort(portInfo);
             }
-            MessageBox.Show(returnTaskSocketMessage.parameters["msg"]);
+            MessageBox.Show(tsM.parameters["msg"]);
         }
     }
 }
