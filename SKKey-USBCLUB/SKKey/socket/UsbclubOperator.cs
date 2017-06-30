@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Sockets;
+using System.Runtime.InteropServices;
 
 namespace SKKey.socket
 {
@@ -23,6 +24,16 @@ namespace SKKey.socket
          * dictionary result:0 成功
          *            result:非0 失败  msg:错误信息
          */
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "OpenUSBPortByID", CharSet = CharSet.Auto)]
+        public static extern int OpenUSBPortByID(int nUSBPort,          ref String strIPAddrPort);
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Init", CharSet = CharSet.Auto)]
+        public static extern int USBShareUnit_Init();
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Fini", CharSet = CharSet.Auto)]
+        public static extern int USBShareUnit_Fini();
+        
 
         public static Dictionary<string, string> openPort(string portInfo)
         {
@@ -245,10 +256,6 @@ namespace SKKey.socket
                 if (p.Start())
                 {
                     log.Info("本地挂载" + ip + "机柜端口,树形描述：" + sxms + ",参数：" + param);
-                    //p.StandardInput.WriteLine(param);
-                    //p.StandardInput.WriteLine("exit");
-                    //msg = p.StandardOutput.ReadToEnd();
-                    //log.Info("本地挂在设备，返回数据：" + msg);
                     p.Close();
                 }
                 else

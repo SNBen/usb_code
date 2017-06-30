@@ -13,7 +13,8 @@ namespace SKKey.websocket
 {
     class TaskWebsocketClient
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog log = 
+            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         
         private static TaskWebsocketClient instance;
 
@@ -25,7 +26,6 @@ namespace SKKey.websocket
 
         private  TaskWebsocketClient()
         {
-
         }
 
         public static TaskWebsocketClient Instance 
@@ -57,7 +57,6 @@ namespace SKKey.websocket
                 }
             }
             log.Info("taskserver connected");
-        
         }
 
         public void connect()
@@ -66,9 +65,10 @@ namespace SKKey.websocket
             String taskServer = ConfigManager.Instance.Config.taskServer;
             if (!"usb".Equals(ConfigManager.Instance.Config.clientType))
             {
-                if (ConfigManager.Instance.Config.taskServerIP == null || ConfigManager.Instance.Config.taskServerIP == ""
-                    
-                   || ConfigManager.Instance.Config.taskServerPort == null || ConfigManager.Instance.Config.taskServerPort == "")
+                if (ConfigManager.Instance.Config.taskServerIP == null || 
+                    ConfigManager.Instance.Config.taskServerIP == "" ||
+                    ConfigManager.Instance.Config.taskServerPort == null || 
+                    ConfigManager.Instance.Config.taskServerPort == "")
                 {
                     return;
                 }

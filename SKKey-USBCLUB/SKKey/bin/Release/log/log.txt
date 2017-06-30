@@ -2,3 +2,624 @@
 2017-06-30 10:16:37,255 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
 2017-06-30 10:16:37,258 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
 2017-06-30 10:16:37,258 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 10:40:34,992 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 10:40:35,009 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 10:40:35,014 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 10:40:35,015 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 10:40:40,630 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:40:40,630 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:40:40,786 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498790435359,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498790435359,"request":false,"async":false}
+2017-06-30 10:40:40,792 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:40:47,071 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:40:47,071 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:40:47,071 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498790435360,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498790441796,"request":false,"async":false}
+2017-06-30 10:40:47,084 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:41:58,101 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 10:41:58,115 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 10:41:58,123 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 10:41:58,124 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 10:43:02,014 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 10:43:02,029 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 10:43:02,102 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 10:43:02,103 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 10:43:07,584 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:43:07,584 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:43:07,696 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498790582257,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498790582256,"request":false,"async":false}
+2017-06-30 10:43:07,702 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:53:02,672 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 10:53:02,685 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 10:53:02,687 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 10:53:02,687 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 10:53:08,062 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:53:08,062 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:53:08,167 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791182786,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791182786,"request":false,"async":false}
+2017-06-30 10:53:08,170 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:53:27,336 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 10:53:27,349 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 10:53:27,351 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 10:53:27,351 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 10:53:32,717 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:53:32,717 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:53:32,816 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207436,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791207436,"request":false,"async":false}
+2017-06-30 10:53:32,818 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:53:39,117 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:53:39,117 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:53:39,117 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207437,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791213822,"request":false,"async":false}
+2017-06-30 10:53:39,117 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:53:45,380 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:53:45,380 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:53:45,380 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207438,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791220118,"request":false,"async":false}
+2017-06-30 10:53:45,380 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:53:51,629 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:53:51,629 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:53:51,629 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207439,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791226382,"request":false,"async":false}
+2017-06-30 10:53:51,629 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:53:57,869 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:53:57,869 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:53:57,869 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207440,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791232630,"request":false,"async":false}
+2017-06-30 10:53:57,870 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:04,107 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:04,107 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:04,107 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207441,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791238872,"request":false,"async":false}
+2017-06-30 10:54:04,107 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:10,358 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:10,358 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:10,358 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207442,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791245109,"request":false,"async":false}
+2017-06-30 10:54:10,358 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:16,598 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:16,598 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:16,598 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207443,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791251360,"request":false,"async":false}
+2017-06-30 10:54:16,598 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:22,831 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:22,831 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:22,831 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207444,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791257600,"request":false,"async":false}
+2017-06-30 10:54:22,831 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:29,056 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:29,056 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:29,056 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207445,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791263833,"request":false,"async":false}
+2017-06-30 10:54:29,056 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:35,291 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:35,291 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:35,291 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207446,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791270058,"request":false,"async":false}
+2017-06-30 10:54:35,291 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:41,538 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:41,538 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:41,538 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207447,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791276292,"request":false,"async":false}
+2017-06-30 10:54:41,538 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:47,785 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:47,785 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:47,785 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207448,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791282539,"request":false,"async":false}
+2017-06-30 10:54:47,786 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:54:54,029 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:54:54,029 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:54:54,029 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207449,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791288788,"request":false,"async":false}
+2017-06-30 10:54:54,029 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:00,268 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:00,268 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:00,268 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207450,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791295031,"request":false,"async":false}
+2017-06-30 10:55:00,268 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:06,507 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:06,507 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:06,507 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207451,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791301270,"request":false,"async":false}
+2017-06-30 10:55:06,507 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:12,747 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:12,747 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:12,747 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207452,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791307512,"request":false,"async":false}
+2017-06-30 10:55:12,747 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:18,988 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:18,988 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:18,988 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207453,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791313749,"request":false,"async":false}
+2017-06-30 10:55:18,988 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:25,234 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:25,234 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:25,234 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207454,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791319989,"request":false,"async":false}
+2017-06-30 10:55:25,234 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:31,473 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:31,473 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:31,473 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207455,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791326236,"request":false,"async":false}
+2017-06-30 10:55:31,473 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:37,710 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:37,710 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:37,710 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207456,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791332475,"request":false,"async":false}
+2017-06-30 10:55:37,711 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:43,958 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:43,958 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:43,958 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207457,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791338714,"request":false,"async":false}
+2017-06-30 10:55:43,959 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:50,204 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:50,204 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:50,204 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207458,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791344962,"request":false,"async":false}
+2017-06-30 10:55:50,204 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:55:56,442 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:55:56,442 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:55:56,442 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207459,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791351206,"request":false,"async":false}
+2017-06-30 10:55:56,443 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:02,682 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:02,682 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:02,682 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207460,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791357445,"request":false,"async":false}
+2017-06-30 10:56:02,682 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:08,924 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:08,924 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:08,924 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207461,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791363683,"request":false,"async":false}
+2017-06-30 10:56:08,924 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:15,160 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:15,160 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:15,160 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207462,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791369926,"request":false,"async":false}
+2017-06-30 10:56:15,161 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:21,409 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:21,409 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:21,409 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207463,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791376163,"request":false,"async":false}
+2017-06-30 10:56:21,409 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:27,672 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:27,672 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:27,672 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207464,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791382410,"request":false,"async":false}
+2017-06-30 10:56:27,673 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:33,916 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:33,916 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:33,916 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207465,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791388675,"request":false,"async":false}
+2017-06-30 10:56:33,916 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:40,164 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:40,164 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:40,164 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207466,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791394918,"request":false,"async":false}
+2017-06-30 10:56:40,164 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:46,437 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:46,437 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:46,437 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207467,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791401166,"request":false,"async":false}
+2017-06-30 10:56:46,437 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:52,697 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:52,697 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:52,697 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207468,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791407439,"request":false,"async":false}
+2017-06-30 10:56:52,697 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:56:58,958 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:56:58,958 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:56:58,958 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207469,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791413699,"request":false,"async":false}
+2017-06-30 10:56:58,958 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:05,203 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:05,203 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:05,203 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207470,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791419961,"request":false,"async":false}
+2017-06-30 10:57:05,203 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:11,448 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:11,448 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:11,448 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207471,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791426206,"request":false,"async":false}
+2017-06-30 10:57:11,448 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:17,696 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:17,696 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:17,696 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207472,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791432450,"request":false,"async":false}
+2017-06-30 10:57:17,697 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:23,984 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:23,984 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:23,984 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207473,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791438699,"request":false,"async":false}
+2017-06-30 10:57:23,984 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:30,260 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:30,260 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:30,260 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207474,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791444986,"request":false,"async":false}
+2017-06-30 10:57:30,260 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:36,515 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:36,515 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:36,515 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207475,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791451262,"request":false,"async":false}
+2017-06-30 10:57:36,515 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:42,782 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:42,782 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:42,782 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207476,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791457516,"request":false,"async":false}
+2017-06-30 10:57:42,782 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:49,058 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:49,058 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:49,058 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207477,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791463783,"request":false,"async":false}
+2017-06-30 10:57:49,058 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:57:55,310 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:57:55,310 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:57:55,310 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207478,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791470060,"request":false,"async":false}
+2017-06-30 10:57:55,310 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:01,536 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:01,536 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:01,536 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207479,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791476312,"request":false,"async":false}
+2017-06-30 10:58:01,537 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:07,779 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:07,779 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:07,779 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207480,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791482539,"request":false,"async":false}
+2017-06-30 10:58:07,779 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:14,018 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:14,018 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:14,018 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207481,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791488780,"request":false,"async":false}
+2017-06-30 10:58:14,018 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:20,267 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:20,267 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:20,267 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207482,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791495019,"request":false,"async":false}
+2017-06-30 10:58:20,267 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:26,511 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:26,511 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:26,511 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207483,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791501269,"request":false,"async":false}
+2017-06-30 10:58:26,511 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:32,754 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:32,754 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:32,754 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207484,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791507513,"request":false,"async":false}
+2017-06-30 10:58:32,754 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:38,979 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:38,979 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:38,979 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207485,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791513756,"request":false,"async":false}
+2017-06-30 10:58:38,979 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 10:58:45,224 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 10:58:45,224 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-06-30 10:58:45,224 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498791207486,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498791519981,"request":false,"async":false}
+2017-06-30 10:58:45,224 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:48:16,879 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:48:16,895 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:48:16,902 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:48:16,902 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 16:48:22,637 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 16:48:22,637 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 16:48:22,746 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498812497209,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498812497209,"request":false,"async":false}
+2017-06-30 16:48:22,752 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:48:29,029 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 16:48:29,029 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 16:48:29,030 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498812497210,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498812503756,"request":false,"async":false}
+2017-06-30 16:48:29,034 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:48:43,203 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:48:43,218 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:48:43,224 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:48:43,225 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 16:49:21,299 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:49:21,311 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:49:21,316 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:49:21,316 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 16:50:48,612 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:50:48,625 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:50:48,627 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:50:48,627 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 16:50:54,573 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:50:54,585 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:50:54,588 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:50:54,588 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 16:50:57,412 [1] INFO  SKKey.form.MainForm [139] - 打开机柜...
+2017-06-30 16:50:57,415 [1] INFO  SKKey.socket.UsbclubOperator [54] - 打开端口信息：System.String[]-cmdStr:00000011803036383032323030303233380000000D
+2017-06-30 16:50:57,416 [1] INFO  SKKey.socket.UsbclubOperator [191] - 申请打开端口, ip:127.0.0.1, port:8110, cmd:00000011803036383032323030303233380000000D
+2017-06-30 16:50:58,424 [1] INFO  SKKey.socket.UsbclubOperator [82] - 打开端口对外返回结果：result:-1;msg:打开端口异常;
+2017-06-30 16:50:58,425 [1] ERROR SKKey.form.MainForm [144] - 打开设备失败：System.Collections.Generic.Dictionary`2[System.String,System.String]
+2017-06-30 16:50:58,425 [1] INFO  SKKey.form.MainForm [150] - 打开机柜成功
+2017-06-30 16:50:58,427 [1] INFO  SKKey.ocx.WebOcxAccess [39] - 打开设备
+2017-06-30 16:50:58,431 [1] ERROR SKKey.ocx.WebOcxAccess [44] - 打开设备失败：打开设备--?′2?USBKEY(0xA7)
+2017-06-30 16:50:58,431 [1] ERROR SKKey.task.TokenTask [94] - 打开设备失败:打开设备--?′2?USBKEY(0xA7)
+System.Exception: 打开设备失败:打开设备--?′2?USBKEY(0xA7)
+   at SKKey.ocx.WebOcxAccess.openAndGetCert(String password) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\ocx\WebOcxAccess.cs:line 44
+   at SKKey.task.TokenTask.getTocken(String ym, String ymbb, String sh, String password, String rwId) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 89
+2017-06-30 16:50:58,435 [1] INFO  SKKey.socket.UsbclubOperator [103] - 关闭端口信息：System.String[]-cmdStr:00000011813036383032323030303233380000000D
+2017-06-30 16:50:58,436 [1] INFO  SKKey.socket.UsbclubOperator [138] - 申请关闭端口, ip:127.0.0.1, port:8110, cmd:00000011813036383032323030303233380000000D
+2017-06-30 16:50:59,439 [1] INFO  SKKey.socket.UsbclubOperator [128] - 打开端口对外返回结果：result:-1;msg:关闭端口异常;
+2017-06-30 16:50:59,976 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 16:50:59,977 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 16:51:00,085 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498812654696,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498812654696,"request":false,"async":false}
+2017-06-30 16:51:00,087 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:51:25,366 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:51:25,384 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:51:25,390 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:51:25,390 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 16:51:30,974 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 16:51:30,974 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 16:51:31,088 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498812685635,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498812685635,"request":false,"async":false}
+2017-06-30 16:51:31,095 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:51:37,356 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 16:51:37,356 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 16:51:37,356 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498812685636,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498812692098,"request":false,"async":false}
+2017-06-30 16:51:37,361 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:51:42,780 [1] INFO  SKKey.form.MainForm [139] - 打开机柜...
+2017-06-30 16:51:42,784 [1] INFO  SKKey.socket.UsbclubOperator [54] - 打开端口信息：System.String[]-cmdStr:00000011803036383032323030303233380000000D
+2017-06-30 16:51:42,786 [1] INFO  SKKey.socket.UsbclubOperator [191] - 申请打开端口, ip:127.0.0.1, port:8110, cmd:00000011803036383032323030303233380000000D
+2017-06-30 16:51:43,655 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 16:51:43,655 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 16:51:43,655 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498812685637,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498812698363,"request":false,"async":false}
+2017-06-30 16:51:43,659 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:51:43,817 [1] INFO  SKKey.socket.UsbclubOperator [82] - 打开端口对外返回结果：result:-1;msg:打开端口异常;
+2017-06-30 16:51:43,818 [1] ERROR SKKey.form.MainForm [144] - 打开设备失败：System.Collections.Generic.Dictionary`2[System.String,System.String]
+2017-06-30 16:51:43,818 [1] INFO  SKKey.form.MainForm [150] - 打开机柜成功
+2017-06-30 16:51:43,820 [1] INFO  SKKey.ocx.WebOcxAccess [39] - 打开设备
+2017-06-30 16:51:43,824 [1] ERROR SKKey.ocx.WebOcxAccess [44] - 打开设备失败：打开设备--?′2?USBKEY(0xA7)
+2017-06-30 16:51:43,830 [1] ERROR SKKey.task.TokenTask [94] - 打开设备失败:打开设备--?′2?USBKEY(0xA7)
+System.Exception: 打开设备失败:打开设备--?′2?USBKEY(0xA7)
+   at SKKey.ocx.WebOcxAccess.openAndGetCert(String password) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\ocx\WebOcxAccess.cs:line 44
+   at SKKey.task.TokenTask.getTocken(String ym, String ymbb, String sh, String password, String rwId) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 89
+2017-06-30 16:51:43,862 [1] INFO  SKKey.socket.UsbclubOperator [103] - 关闭端口信息：System.String[]-cmdStr:00000011813036383032323030303233380000000D
+2017-06-30 16:51:43,864 [1] INFO  SKKey.socket.UsbclubOperator [138] - 申请关闭端口, ip:127.0.0.1, port:8110, cmd:00000011813036383032323030303233380000000D
+2017-06-30 16:51:44,890 [1] INFO  SKKey.socket.UsbclubOperator [128] - 打开端口对外返回结果：result:-1;msg:关闭端口异常;
+2017-06-30 16:53:31,404 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:53:31,417 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:53:31,422 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:53:31,423 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 16:53:36,021 [1] INFO  SKKey.form.MainForm [143] - 打开机柜...
+2017-06-30 16:53:36,024 [1] INFO  SKKey.socket.UsbclubOperator [54] - 打开端口信息：System.String[]-cmdStr:00000011803036383032323030303233380000000D
+2017-06-30 16:53:36,025 [1] INFO  SKKey.socket.UsbclubOperator [191] - 申请打开端口, ip:127.0.0.1, port:8110, cmd:00000011803036383032323030303233380000000D
+2017-06-30 16:53:37,046 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 16:53:37,051 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 16:53:37,052 [1] INFO  SKKey.socket.UsbclubOperator [82] - 打开端口对外返回结果：result:-1;msg:打开端口异常;
+2017-06-30 16:53:37,052 [1] ERROR SKKey.form.MainForm [148] - 打开设备失败：System.Collections.Generic.Dictionary`2[System.String,System.String]
+2017-06-30 16:53:37,052 [1] INFO  SKKey.form.MainForm [154] - 打开机柜成功
+2017-06-30 16:53:37,055 [1] INFO  SKKey.ocx.WebOcxAccess [39] - 打开设备
+2017-06-30 16:53:37,060 [1] ERROR SKKey.ocx.WebOcxAccess [44] - 打开设备失败：打开设备--?′2?USBKEY(0xA7)
+2017-06-30 16:53:37,066 [1] ERROR SKKey.task.TokenTask [94] - 打开设备失败:打开设备--?′2?USBKEY(0xA7)
+System.Exception: 打开设备失败:打开设备--?′2?USBKEY(0xA7)
+   at SKKey.ocx.WebOcxAccess.openAndGetCert(String password) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\ocx\WebOcxAccess.cs:line 44
+   at SKKey.task.TokenTask.getTocken(String ym, String ymbb, String sh, String password, String rwId) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 89
+2017-06-30 16:53:37,069 [1] INFO  SKKey.socket.UsbclubOperator [103] - 关闭端口信息：System.String[]-cmdStr:00000011813036383032323030303233380000000D
+2017-06-30 16:53:37,070 [1] INFO  SKKey.socket.UsbclubOperator [138] - 申请关闭端口, ip:127.0.0.1, port:8110, cmd:00000011813036383032323030303233380000000D
+2017-06-30 16:53:37,168 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498812811675,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498812811675,"request":false,"async":false}
+2017-06-30 16:53:37,275 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 16:53:38,096 [1] INFO  SKKey.socket.UsbclubOperator [128] - 打开端口对外返回结果：result:-1;msg:关闭端口异常;
+2017-06-30 16:54:54,359 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 16:54:54,374 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 16:54:54,488 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 16:54:54,489 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 17:05:33,553 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-06-30 17:05:33,569 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
+2017-06-30 17:05:33,634 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-06-30 17:05:33,634 [1] INFO  SKKey.config.ConfigManager [90] - 配置文件不存在
+2017-06-30 17:05:39,148 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 17:05:39,148 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 17:05:39,258 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498813533824,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498813533824,"request":false,"async":false}
+2017-06-30 17:05:39,265 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 17:05:45,629 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 17:05:45,629 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 17:05:45,629 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498813533825,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498813540269,"request":false,"async":false}
+2017-06-30 17:05:45,634 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370
+2017-06-30 17:05:52,008 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [55] - taskserver connect 失败
+2017-06-30 17:05:52,008 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [60] - taskserver connected
+2017-06-30 17:05:52,008 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [160] - request:{"id":1498813533826,"type":"JX_CLIENT_GETSESSIONCLIENTTASK","content":null,"parameters":{"sh":null,"license":null,"controlVersion":null},"createTime":1498813546656,"request":false,"async":false}
+2017-06-30 17:05:52,014 [tokenThread] ERROR SKKey.task.TokenTask [392] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SKKey.websocket.TaskWebsocketClient.send(TaskSocketMessage taskSocketMessage) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 88
+   at SKKey.websocket.TaskWebsocketClient.sendSyncRequest(TaskSocketMessage msg) in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\websocket\TaskWebsocketClient.cs:line 163
+   at SKKey.task.TokenTask.requestTockenTask() in D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\task\TokenTask.cs:line 370

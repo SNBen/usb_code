@@ -1,29 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using WebSocket4Net;
-using System.Threading;
-using SuperSocket.ClientEngine;
-
-using Newtonsoft.Json;
-
-using SKKey.http;
-
+﻿using SKKey.config;
 using SKKey.ocx;
-using SKKey.websocket;
+using SKKey.socket;
 using SKKey.task;
-using SKKey.config;
+using SKKey.utils;
+using SKKey.websocket;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace SKKey.form
 {
     public partial class MainForm : Form
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public MainForm()
         {
             InitializeComponent();
@@ -50,7 +41,8 @@ namespace SKKey.form
 
             String controlVersion = ConfigManager.Instance.Config.controlVersion;
 
-            if ("baiwang".Equals(controlVersion)) {
+            if ("baiwang".Equals(controlVersion))
+            {
                 baiwangRadioButton.Checked = true;
             }
             TokenTask.tockenTaskRequestThreadInit();
@@ -70,7 +62,6 @@ namespace SKKey.form
 
         public void onClose()
         {
-
             Process[] procs = Process.GetProcessesByName("SKKeyWatch");
 
             foreach (Process proc in procs)
@@ -81,7 +72,6 @@ namespace SKKey.form
                 }
                 catch (Exception exp) { }
             }
-           
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -92,10 +82,7 @@ namespace SKKey.form
         private void submitButton_Click(object sender, EventArgs e)
         {
             String taskServerIP = taskServerIPBox.Text;
-
             String taskServerPort = taskServerPortBox.Text;
-
-
 
             if (taskServerIP == null || taskServerIP.Trim().Length == 0)
             {
@@ -110,7 +97,6 @@ namespace SKKey.form
             }
 
             Dictionary<string, string> map = new Dictionary<string, string>();
-
             map["taskServerIP"] = taskServerIP;
             map["taskServerPort"] = taskServerPort;
 
@@ -118,7 +104,8 @@ namespace SKKey.form
             {
                 map["controlVersion"] = "baiwang";
             }
-            else {
+            else
+            {
                 map["controlVersion"] = "hangxin";
             }
             ConfigManager.writeJSONConfigAndInit(map);
@@ -127,14 +114,42 @@ namespace SKKey.form
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
+        private void BTNTest_Click(object sender, EventArgs e)
+        {
+            int iResult = UsbclubOperator.USBShareUnit_Init();
+            MessageBox.Show(String.Format("{0}", iResult));
 
+            String USBID = "192.168.101.222:10001:3240";
+            iResult = UsbclubOperator.OpenUSBPortByID(13, ref USBID);
+            MessageBox.Show(String.Format("{0}", iResult));
+
+            String sh = SH_textBox.Text;
+            String password = null;
+            String portInfo = null;
+
+            XmlUtil.GetParamByTaxCode(sh, ref portInfo, ref password);
+            Dictionary<String, String> openInfo = UsbclubOperator.openPort(portInfo);
+            if (!"0".Equals(openInfo["result"]))
+            {
+                log.Error("打开设备失败：" + openInfo);
+                TaskSocketMessage returnSocketMessage = new TaskSocketMessage();
+                returnSocketMessage.type = TaskHandle.POST_TOKEN;
+            }
+
+            TaskSocketMessage returnTaskSocketMessage 
+                = new TokenTask().getTocken("https://fpdk.cqsw.gov.cn/", "3.0.09", sh, password, "1");
+
+            if (portInfo != null)
+            {
+                UsbclubOperator.closePort(portInfo);
+            }
+            MessageBox.Show(returnTaskSocketMessage.parameters["msg"]);
+        }
     }
 }
