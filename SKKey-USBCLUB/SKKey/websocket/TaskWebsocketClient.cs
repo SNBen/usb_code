@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System;
 using WebSocket4Net;
+using System.Xml.XPath;
 
 namespace SKKey.websocket
 {
@@ -72,7 +73,11 @@ namespace SKKey.websocket
                 {
                     return;
                 }
+
                 taskServer = "ws://" + ConfigManager.Instance.Config.taskServerIP + ":" + ConfigManager.Instance.Config.taskServerPort + "/websocket";
+                taskServer = String.Format("ws://{0}:{1}/websocket",
+                                            ConfigManager.Instance.Config.taskServerIP,
+                                            ConfigManager.Instance.Config.taskServerPort);
             }
             log.Info("尝试连接taskServer：" + taskServer);
             websocket = new WebSocket(taskServer);
@@ -114,12 +119,19 @@ namespace SKKey.websocket
             _login.CompanyName = "";
             _login.ACTION = "1";
             _login.TaxCodeList = new List<string>();
-            _login.TaxCodeList.Add("91500000747150540A");
-            _login.TIME = "2017-06-30 09:09:09";
+
+            XPathDocument doc = new XPathDocument("USBData.xml");
+            XPathNavigator xPathNav = doc.CreateNavigator();
+            XPathNodeIterator nodeIterator = xPathNav.Select("/Root/Item");
+            while (nodeIterator.MoveNext())
+            {
+                XPathNavigator itemNav = nodeIterator.Current;
+                _login.TaxCodeList.Add(itemNav.SelectSingleNode("TaxCode").Value);
+            }
+            _login.TIME = DateTime.Now.ToString();// "2017-06-30 09:09:09";
             tsm.content = JsonConvert.SerializeObject(_login);
             log.Info("ydz：" + JsonConvert.SerializeObject(tsm));
             send(tsm);
-
             log.Info("taskserver 已打开");
             instance.connected = true;
         }

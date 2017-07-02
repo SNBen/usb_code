@@ -142,7 +142,6 @@ namespace SKKey.task
             {
                 log.Error(e.Message, e);
                 return_tsm.parameters["code"] = CODE_SERVER_ERROR;
-
                 return_tsm.parameters["msg"] = "调用服务器失败!";
                 return return_tsm;
             }
@@ -206,6 +205,62 @@ namespace SKKey.task
             public string jxExchangeLicense { get; set; }
 
         }
+        public TaskSocketMessage doHandleEx(TaskSocketMessage request_tsm)
+        {
+            log.Info("doHandle: start" + request_tsm.content);
+
+            puttask _puttask = JsonConvert.DeserializeObject<puttask>(request_tsm.content);
+            pt_param _param = JsonConvert.DeserializeObject<pt_param>(_puttask.param);
+            String sh = _param.nsrsbh;
+            String password = _param.password;
+            String portInfo = null;
+            int iUSBPort = 0;
+
+            if ("usb".Equals(ConfigManager.Instance.Config.clientType))
+            {
+                password = ConfigManager.Instance.Config.password;
+            }
+            else
+            {
+                ////////////////////////////////////////////////////////////////
+                // 0680220002389-12.0.0.0_13
+                XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort, ref portInfo, ref password);
+                log.Info("打开机柜..." + portInfo + iUSBPort);
+                int iResult  = UsbclubOperator.OpenUSBPortByID(iUSBPort,ref portInfo);
+                if ( 0 != iResult)
+                {
+                    log.Error("打开设备失败：" + portInfo);
+
+                    TaskSocketMessage returnSocketMessage = new TaskSocketMessage();
+                    returnSocketMessage.type = TaskHandle.POST_TOKEN;
+                    returnSocketMessage.parameters["rwid"] = request_tsm.parameters["rwid"];
+
+                    returnSocketMessage.parameters["code"] = CODE_USB_CLUB_ERROR;
+                    returnSocketMessage.parameters["msg"] = "打开机柜端口失败";
+                }
+                log.Info("打开机柜成功");
+            }
+
+            TaskSocketMessage return_tsm = getTocken(_param.url, _param.ymbb, sh, password, _puttask.jxKhdwId);
+            if (portInfo != null)
+            {
+                UsbclubOperator.closePort(portInfo);
+            }
+            if(!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
+            {
+                _puttask.errno = return_tsm.parameters["code"];
+            }
+            else
+            {
+                _puttask.result = String.Format("{\"token\":\"{0}\"}", return_tsm.parameters["token"]);
+            }
+            
+            request_tsm.content = JsonConvert.SerializeObject(_puttask);
+            request_tsm.type = "submitTaskResult";
+            log.Info("doHandle end:" + JsonConvert.SerializeObject(request_tsm));
+            return request_tsm;
+        }
+
 
 
 
@@ -218,27 +273,21 @@ namespace SKKey.task
             String sh = _param.nsrsbh;//_puttask.param["nsrsbh"];
             String password = _param.password;//= _puttask.param["password"];
             String portInfo = null;
-
-            
-            request_tsm.content = JsonConvert.SerializeObject(_puttask);
-            request_tsm.type = "submitTaskResult";
-            log.Info("doHandle end:" + JsonConvert.SerializeObject(request_tsm));
-            return request_tsm;
-
-
+            int iUSBPort = 0;
 
             if ("usb".Equals(ConfigManager.Instance.Config.clientType))
             {
                 password = ConfigManager.Instance.Config.password;
             }
-            else 
+            else
             {
                 ////////////////////////////////////////////////////////////////
 
                 // 0680220002389-12.0.0.0_13
                 XmlUtil.GetParamByTaxCode(sh, ref portInfo, ref password);
-                //portInfo = requestTaskSocketMessage.parameters["portInfo"];
-                log.Info("打开机柜...");
+                //XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort,ref portInfo, ref password);
+
+                log.Info("打开机柜..." + portInfo);
                 Dictionary<String,String> openInfo=  UsbclubOperator.openPort(portInfo);
                 if (!"0".Equals(openInfo["result"]))
                 {
@@ -254,19 +303,26 @@ namespace SKKey.task
                 log.Info("打开机柜成功");
             }
 
-            TaskSocketMessage returnTaskSocketMessage = getTocken(_param.url, _param.ymbb, sh, password, _puttask.jxKhdwId);
+            TaskSocketMessage return_tsm = getTocken(_param.url, _param.ymbb, sh, password, _puttask.jxKhdwId);
             if (portInfo != null)
             {
                 UsbclubOperator.closePort(portInfo);
             }
 
-            _puttask.result = String.Format("{\"token\":\"{0}\"}",returnTaskSocketMessage.parameters["token"]);
+            if (!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
+            {
+                _puttask.errno = return_tsm.parameters["code"];
+            }
+            else
+            {
+                _puttask.result = String.Format("{\"token\":\"{0}\"}", return_tsm.parameters["token"]);
+            }
+
+
             request_tsm.content = JsonConvert.SerializeObject(_puttask);
             request_tsm.type = "submitTaskResult";
             log.Info("doHandle end:" + JsonConvert.SerializeObject(request_tsm));
             return request_tsm;
-
-            return returnTaskSocketMessage;
         }
 
         public FpdkHttpResult firstLogin(String ym,String ymbb,String clientHello,String password,int retryTimes)

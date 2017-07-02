@@ -8,4 +8,11 @@
 		<TaxCode>91500000747150540A</TaxCode>
 		<PWD>88888888</PWD>
 	</Item>
+	<Item>
+		<USBID>0680220002389</USBID>
+		<USBIP>192.168.101.222</USBIP>
+		<USBPort>8</USBPort>
+		<TaxCode>110102681953105</TaxCode>
+		<PWD>88888888</PWD>
+	</Item>
 </Root>

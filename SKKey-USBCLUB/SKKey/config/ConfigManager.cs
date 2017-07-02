@@ -11,7 +11,8 @@ namespace SKKey.config
 {
     class ConfigManager
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog log = 
+            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private static ConfigManager instance = null;
 
         public Config Config
@@ -57,7 +58,7 @@ namespace SKKey.config
             log.Info("load 配置文件 " + filepath);
             if (!File.Exists(filepath))
             {
-                log.Info("配置文件不存在");
+                log.Error("配置文件不存在");
                 return;
             }
 
@@ -135,6 +136,5 @@ namespace SKKey.config
             }
             log.Info("配置载入成功");
         }
-
     }
 }

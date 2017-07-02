@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKKey", "SKKey\SKKey.csproj", "{3D282198-C09E-44C9-80DE-4AC888F0FAD2}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WebSocket", "WebSocket\WebSocket.vcxproj", "{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}"
 EndProject
 Global
@@ -15,12 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Debug|x64.ActiveCfg = Debug|x86
-		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Debug|x86.ActiveCfg = Debug|x86
-		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Debug|x86.Build.0 = Debug|x86
-		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Release|x64.ActiveCfg = Release|x86
-		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Release|x86.ActiveCfg = Release|x86
-		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Release|x86.Build.0 = Release|x86
 		{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}.Debug|x64.ActiveCfg = Debug|x64
 		{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}.Debug|x64.Build.0 = Debug|x64
 		{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}.Debug|x86.ActiveCfg = Debug|Win32

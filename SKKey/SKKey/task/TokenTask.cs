@@ -11,28 +11,20 @@ namespace SKKey.task
 {
     class TokenTask
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog log = 
+            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private static string ERROR_LICENSE = "1";
 
         private static Boolean tockenTaskRequestThreadIsInit = false;
-
         public static Object tokenLock = new Object();
-
-        public static bool errorPassword = false;
-
-        public static bool errorLicense = false;
-
+        public static bool   errorPassword = false;
+        public static bool   errorLicense = false;
         public static string CODE_SUCCESS = "0";
-
         public static string CODE_SH_ERROR = "902";
-
         public static string CODE_OCX_ERROR = "907";
-
         public static string CODE_SERVER_ERROR = "903";
-
         public static string CODE_PASS_ERROR = "908";
-
         public static string CODE_USB_CLUB_ERROR = "901";
 
 
@@ -177,6 +169,7 @@ namespace SKKey.task
                 portInfo = requestTaskSocketMessage.parameters["portInfo"];
                 log.Info("打开机柜...");
                 Dictionary<String, String> openInfo = UsbclubOperator.openPort(portInfo);
+                Thread.Sleep(30000);
                 if (!"0".Equals(openInfo["result"]))
                 {
                     log.Error("打开设备失败：" + openInfo);
