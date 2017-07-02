@@ -6,6 +6,9 @@
 #include <json/writer.h>
 #include <json/json.h>
 
+#include <thread>
+using namespace std;
+
 #include <boost/date_time/posix_time/posix_time.hpp>
 
 typedef websocketpp::client<websocketpp::config::asio_client> ws_client;
@@ -52,11 +55,13 @@ public:
     {
         if (msg->get_opcode() == websocketpp::frame::opcode::text)
         {
-            m_messages.push_back("<<" + msg->get_payload());
+            LOG_MODULE_DEBUG("%s", msg->get_payload().c_str());
+            //m_messages.push_back("<<" + msg->get_payload());
         }
         else
         {
-            m_messages.push_back("<<" + websocketpp::utility::to_hex(msg->get_payload()));
+            LOG_MODULE_DEBUG("%s", msg->get_payload().c_str());
+            //m_messages.push_back("<<" + websocketpp::utility::to_hex(msg->get_payload()));
         }
     }
 
@@ -79,29 +84,20 @@ public:
     {
         using namespace boost::posix_time;
         using namespace boost::gregorian;
-        Json::FastWriter styled_writer;
-        ptime now = second_clock::universal_time();
-        std::cout << GetCurrentStamp64() << std::endl;
 
         Json::Value content_;
-        content_["GUID"] = "B69392DF-209B-4102-819B-3C34D9969B86";
+        content_["GUID"] = "{B69392DF-209B-4102-819B-3C34D9969B85}";
         content_["CompanyName"] = "";
         content_["TaxCodeList"].append("91500000747150540A");
         content_["TaxCodeList"].append("110102681953105");
-        content_["TIME"] = to_iso_extended_string(now);
+        content_["TIME"] = to_iso_extended_string(second_clock::universal_time());
 
-        Json::Value initDevice_;
-        initDevice_["id"] = GetCurrentStamp64();
-        initDevice_["type"] = "initDevice";
-        initDevice_["content"] = styled_writer.write(content_);
-        initDevice_["parameters"] = Json::Value::null;
-        initDevice_["request"] = Json::Value(true);
-        initDevice_["async"] = Json::Value(false);
-        initDevice_["createTime"] = GetCurrentStamp64();
+        Json::FastWriter styled_writer;
+        std::string Init = TSM_Init("initDevice", styled_writer.write(content_), true, false);
 
-        LOG_MODULE_INFO("%s", styled_writer.write(initDevice_).c_str());
+        LOG_MODULE_INFO("%s", Init.c_str());
         websocketpp::lib::error_code ec;
-        client->send(hdl, styled_writer.write(initDevice_), websocketpp::frame::opcode::text, ec);
+        client->send(hdl, Init, websocketpp::frame::opcode::text, ec);
         
         if (ec)
         {

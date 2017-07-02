@@ -11,6 +11,8 @@
 
 #include "websocket_endpoint.h"
 #include <boost/date_time/posix_time/posix_time.hpp>
+#include <boost/thread.hpp>
+#include <boost/chrono.hpp>
 #include <LogExt.h>
 
 using namespace std;
@@ -26,33 +28,39 @@ long long GetCurrentStamp64()
     return time_from_epoch.total_seconds();
 }
 
+std::string TSM_Init(std::string type , std::string content,bool request,bool async)
+{
+    Json::FastWriter styled_writer;
+    Json::Value tsm;
+    tsm["id"] = GetCurrentStamp64();
+    tsm["type"] = type;
+    tsm["content"] = content.empty()? Json::Value::null : content;
+    tsm["parameters"] = Json::Value::null;
+    tsm["request"] = Json::Value(request);
+    tsm["async"] = Json::Value(async);
+    tsm["createTime"] = GetCurrentStamp64();
+    return styled_writer.write(tsm);
+}
+
 void Test()
 {
     using namespace boost::gregorian;
     using namespace boost::posix_time;
+    
     Json::FastWriter styled_writer;
-    ptime now = posix_time::second_clock::universal_time();
-    std::cout << GetCurrentStamp64() << std::endl;
 
     Json::Value content_;
     content_["GUID"] = "B69392DF-209B-4102-819B-3C34D9969B86";
     content_["CompanyName"] = "";
     content_["TaxCodeList"].append("91500000747150540A");
     content_["TaxCodeList"].append("110102681953105");
-    content_["TIME"] = to_iso_extended_string(now);
+    content_["TIME"] = to_iso_extended_string(second_clock::universal_time());
 
-    Json::Value initDevice_;
-    initDevice_["id"] = GetCurrentStamp64();
-    initDevice_["type"] = "initDevice";
-    initDevice_["content"] = styled_writer.write(content_);
-    initDevice_["parameters"] = Json::Value::null;
-    initDevice_["request"] = Json::Value(true);
-    initDevice_["async"] = Json::Value(false);
-    initDevice_["createTime"] = GetCurrentStamp64();
+    std::string Init = TSM_Init("initDevice", styled_writer.write(content_) ,true,false);
+    std::string keepalive =  TSM_Init("keepalive", "", true, false);
 
-    std::string strInit(R"({"id":1498960459621,"type":"initDevice","content":"{\"GUID\":\"{B69392DF-209B-4102-819B-3C34D9969B86}\",\"CompanyName\":\"\",\"ACTION\":\"1\",\"TaxCodeList\":[\"91500000747150540A\",\"110102681953105\"],\"TIME\":\"7/2/2017 9:54:23 AM\"}","parameters":{},"createTime":1498960463676,"request":true,"async":false})");
-    LOG_MODULE_INFO("%s", strInit.c_str());
-    LOG_MODULE_INFO("%s", styled_writer.write(initDevice_).c_str());
+    LOG_MODULE_INFO("%s", Init.c_str());
+    LOG_MODULE_INFO("%s", keepalive.c_str());
 }
 
 int main(int argc,char** argv)
@@ -62,6 +70,19 @@ int main(int argc,char** argv)
     websocket_endpoint endpoint;
 
     endpoint.connect("ws://server.ngrok.cc:7088/websocket");
+
+    using namespace boost;
+    boost::thread keepalive([&]() {
+        this_thread::sleep_for(chrono::seconds(5));
+        do 
+        {
+        	std::string Init = TSM_Init("keepalive", "", true, false);
+            endpoint.send(Init);
+            this_thread::sleep_for(chrono::seconds(60));
+        } while (true);
+    });
+    keepalive.detach();
+
     while (!done)
     {
         std::cout << "Enter Command: ";

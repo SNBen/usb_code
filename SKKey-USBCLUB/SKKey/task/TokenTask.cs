@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SKKey.websocket;
-using SKKey.ocx;
-using SKKey.http;
-using System.Threading;
+﻿using Newtonsoft.Json;
 using SKKey.config;
+using SKKey.http;
+using SKKey.ocx;
 using SKKey.socket;
-using System.Xml;
-using System.Xml.XPath;
 using SKKey.utils;
-using Newtonsoft.Json;
+using SKKey.websocket;
+using System;
+using System.Collections.Generic;
+using System.Threading;
 
 namespace SKKey.task
 {
-    class TokenTask
+    internal class TokenTask
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -36,11 +33,11 @@ namespace SKKey.task
 
         public static string CODE_SERVER_ERROR = "903";
 
+        public static string CODE_Net_ERROR = "904-00";
+
         public static string CODE_PASS_ERROR = "908";
 
         public static string CODE_USB_CLUB_ERROR = "901";
-
-
 
         public static List<TaskSocketMessage> requestTaskSocketMessages = new List<TaskSocketMessage>();
 
@@ -73,13 +70,13 @@ namespace SKKey.task
             return tsm;
         }
 
-        public TaskSocketMessage getTocken(String ym,String ymbb,String sh,String password,String rwId)
+        public TaskSocketMessage getTocken(String ym, String ymbb, String sh, String password, String rwId)
         {
             TaskSocketMessage return_tsm = new TaskSocketMessage();
             return_tsm.type = TaskHandle.POST_TOKEN;
             return_tsm.parameters["rwid"] = rwId;
 
-            if (ymbb == null || ymbb== "")
+            if (ymbb == null || ymbb == "")
             {
                 ymbb = "3.0.08";
             }
@@ -97,7 +94,7 @@ namespace SKKey.task
                 return return_tsm;
             }
 
-            if (sh!= null && !oxcSh.Equals(sh))
+            if (sh != null && !oxcSh.Equals(sh))
             {
                 return_tsm.parameters["code"] = CODE_SH_ERROR;
                 return_tsm.parameters["msg"] = "税号不一致!，当前税号：" + oxcSh;
@@ -118,7 +115,7 @@ namespace SKKey.task
             catch (Exception e)
             {
                 log.Error(e.Message, e);
-                return_tsm.parameters["code"] = CODE_SERVER_ERROR;
+                return_tsm.parameters["code"] = CODE_Net_ERROR;
                 return_tsm.parameters["msg"] = "调用服务器失败!";
                 return return_tsm;
             }
@@ -141,18 +138,68 @@ namespace SKKey.task
             catch (Exception e)
             {
                 log.Error(e.Message, e);
-                return_tsm.parameters["code"] = CODE_SERVER_ERROR;
+                return_tsm.parameters["code"] = CODE_Net_ERROR;
                 return_tsm.parameters["msg"] = "调用服务器失败!";
                 return return_tsm;
             }
-            if (fpdkHttpResult.key1.Equals("04"))
+            if (fpdkHttpResult.key1.Equals("00"))
             {
-                return_tsm.parameters["code"] = CODE_PASS_ERROR;
-                return_tsm.parameters["msg"] = "密码不正确!";
+                return_tsm.parameters["code"] = "904-00";
+                return_tsm.parameters["msg"] = fpdkHttpResult.key2;
                 errorPassword = true;
                 return return_tsm;
             }
-            else if (fpdkHttpResult.key1.Equals("03"))
+            else if (fpdkHttpResult.key1.Equals("02"))
+            {
+                return_tsm.parameters["code"] = "904-02";
+                return_tsm.parameters["msg"] = "档案信息不存在!";
+                errorPassword = true;
+                return return_tsm;
+            }
+            else if (fpdkHttpResult.key1.Equals("04"))
+            {
+                return_tsm.parameters["code"] = CODE_PASS_ERROR;
+                return_tsm.parameters["msg"] = "平台密码不正确!";
+                errorPassword = true;
+                return return_tsm;
+            }
+            else if (fpdkHttpResult.key1.Equals("05"))
+            {
+                return_tsm.parameters["code"] = "904-05";
+                return_tsm.parameters["msg"] = "平台密码错误次数超过十次，请联系税务机关解锁或明天再试 !";
+                errorPassword = true;
+                return return_tsm;
+            }
+            else if (fpdkHttpResult.key1.Equals("08"))
+            {
+                return_tsm.parameters["code"] = "904-08";
+                return_tsm.parameters["msg"] = "需要平台密码";
+                errorPassword = true;
+                return return_tsm;
+            }
+            else if (fpdkHttpResult.key1.Equals("12"))
+            {
+                return_tsm.parameters["code"] = "904-12";
+                return_tsm.parameters["msg"] = "信用等级未设置";
+                errorPassword = true;
+                return return_tsm;
+            }
+            else if (fpdkHttpResult.key1.Equals("12"))
+            {
+                return_tsm.parameters["code"] = "904-05";
+                return_tsm.parameters["msg"] = "特定企业，不能使用平台";
+                errorPassword = true;
+                return return_tsm;
+            }
+            else if (fpdkHttpResult.key1.Equals("21"))
+            {
+                return_tsm.parameters["code"] = "904-05";
+                return_tsm.parameters["msg"] = "未启用，无权登录此平台";
+                errorPassword = true;
+                return return_tsm;
+            }
+            else if (fpdkHttpResult.key1.Equals("01") ||
+                     fpdkHttpResult.key1.Equals("03"))
             {
                 return_tsm.parameters["code"] = CODE_SUCCESS;
                 return_tsm.parameters["msg"] = "调用服务器成功!";
@@ -167,7 +214,7 @@ namespace SKKey.task
             }
         }
 
-        class pt_param
+        private class pt_param
         {
             public string nsrsbh { get; set; }
 
@@ -178,22 +225,20 @@ namespace SKKey.task
             public string ymbb { get; set; }
         }
 
-        class puttask
+        private class puttask
         {
             public string jxKhdwId { get; set; }
             public string jxSqzhId { get; set; }
             public string nsrsbh { get; set; }
 
-
             public string rwlx { get; set; }
             public string zt { get; set; }
             public string errno { get; set; }
 
-
             public string sbyy { get; set; }
 
-            
             public string param { get; set; }
+
             //public Dictionary<string, string> param { get; set; }
             public string createTime { get; set; }
 
@@ -203,8 +248,8 @@ namespace SKKey.task
 
             public string result { get; set; }
             public string jxExchangeLicense { get; set; }
-
         }
+
         public TaskSocketMessage doHandleEx(TaskSocketMessage request_tsm)
         {
             log.Info("doHandle: start" + request_tsm.content);
@@ -226,8 +271,8 @@ namespace SKKey.task
                 // 0680220002389-12.0.0.0_13
                 XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort, ref portInfo, ref password);
                 log.Info("打开机柜..." + portInfo + iUSBPort);
-                int iResult  = UsbclubOperator.OpenUSBPortByID(iUSBPort,ref portInfo);
-                if ( 0 != iResult)
+                int iResult = UsbclubOperator.OpenUSBPortByID(iUSBPort, ref portInfo);
+                if (0 != iResult)
                 {
                     log.Error("打开设备失败：" + portInfo);
 
@@ -246,7 +291,7 @@ namespace SKKey.task
             {
                 UsbclubOperator.closePort(portInfo);
             }
-            if(!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
+            if (!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
             {
                 _puttask.errno = return_tsm.parameters["code"];
             }
@@ -254,15 +299,12 @@ namespace SKKey.task
             {
                 _puttask.result = String.Format("{\"token\":\"{0}\"}", return_tsm.parameters["token"]);
             }
-            
+
             request_tsm.content = JsonConvert.SerializeObject(_puttask);
             request_tsm.type = "submitTaskResult";
             log.Info("doHandle end:" + JsonConvert.SerializeObject(request_tsm));
             return request_tsm;
         }
-
-
-
 
         public TaskSocketMessage doHandle(TaskSocketMessage request_tsm)
         {
@@ -288,7 +330,7 @@ namespace SKKey.task
                 //XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort,ref portInfo, ref password);
 
                 log.Info("打开机柜..." + portInfo);
-                Dictionary<String,String> openInfo=  UsbclubOperator.openPort(portInfo);
+                Dictionary<String, String> openInfo = UsbclubOperator.openPort(portInfo);
                 if (!"0".Equals(openInfo["result"]))
                 {
                     log.Error("打开设备失败：" + openInfo);
@@ -312,12 +354,12 @@ namespace SKKey.task
             if (!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
             {
                 _puttask.errno = return_tsm.parameters["code"];
+                _puttask.sbyy = return_tsm.parameters["msg"];
             }
             else
             {
                 _puttask.result = String.Format("{\"token\":\"{0}\"}", return_tsm.parameters["token"]);
             }
-
 
             request_tsm.content = JsonConvert.SerializeObject(_puttask);
             request_tsm.type = "submitTaskResult";
@@ -325,18 +367,24 @@ namespace SKKey.task
             return request_tsm;
         }
 
-        public FpdkHttpResult firstLogin(String ym,String ymbb,String clientHello,String password,int retryTimes)
+        public FpdkHttpResult firstLogin(
+            String ym,
+            String ymbb,
+            String clientHello,
+            String password,
+            int retryTimes)
         {
             Dictionary<String, String> para = new Dictionary<string, string>();
             para.Add("type", "CLIENT-HELLO");
             para.Add("clientHello", clientHello);
             para.Add("ymbb", ymbb);
-             FpdkHttpResult fpdkHttpResult = null;
+            FpdkHttpResult fpdkHttpResult = null;
             try
             {
                 fpdkHttpResult = RestClient.postJSONPCallback<FpdkHttpResult>(ym + "/SbsqWW/login.do", para);
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 log.Error(e.Message, e);
                 if (retryTimes >= 1)
                 {
@@ -345,13 +393,13 @@ namespace SKKey.task
                 retryTimes++;
                 return firstLogin(ym, ymbb, clientHello, password, retryTimes);
             }
-           
+
             if (fpdkHttpResult.key1.Equals("01"))
             {
                 return fpdkHttpResult;
             }
-            else {
-
+            else
+            {
                 if (retryTimes >= 1)
                 {
                     throw new Exception("调用服务器接口失败");
@@ -361,9 +409,9 @@ namespace SKKey.task
             }
         }
 
-        public FpdkHttpResult secondLogin(String ym, String ymbb, String clientAuthCode, String serverRandom,String sh, int retryTimes)
+        public FpdkHttpResult secondLogin(String ym, String ymbb, String clientAuthCode, String serverRandom, String sh, int retryTimes)
         {
-            Dictionary<String, String> para= new Dictionary<string, string>();
+            Dictionary<String, String> para = new Dictionary<string, string>();
             para.Add("type", "CLIENT-AUTH");
             para.Add("clientAuthCode", clientAuthCode);
             para.Add("serverRandom", serverRandom);
@@ -384,7 +432,6 @@ namespace SKKey.task
                 retryTimes++;
                 return secondLogin(ym, ymbb, clientAuthCode, serverRandom, sh, retryTimes);
             }
-            
 
             if (fpdkHttpResult.key1.Equals("03"))
             {
@@ -421,7 +468,8 @@ namespace SKKey.task
             {
                 return;
             }
-            Thread tockenThread = new Thread(delegate() {
+            Thread tockenThread = new Thread(delegate ()
+            {
                 while (true)
                 {
                     if ("usb".Equals(ConfigManager.Instance.Config.clientType))
@@ -429,12 +477,13 @@ namespace SKKey.task
                         if (errorPassword)
                         {
                             log.Error("密码错误没有重新配置");
-                        }else if (errorLicense)
+                        }
+                        else if (errorLicense)
                         {
                             log.Error("授权码错误，请重新输入");
                         }
-                        else if (ConfigManager.Instance.Config.sh != null && 
-                                 ConfigManager.Instance.Config.password != null && 
+                        else if (ConfigManager.Instance.Config.sh != null &&
+                                 ConfigManager.Instance.Config.password != null &&
                                  ConfigManager.Instance.Config.license != null)
                         {
                             KeepAlive();
@@ -450,7 +499,6 @@ namespace SKKey.task
                     }
                     Thread.Sleep(60000);
                 }
-            
             });
             tockenThread.Name = "tokenThread";
             tockenThread.Start();
@@ -510,7 +558,7 @@ namespace SKKey.task
                     }
                 }
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
                 log.Error(e.Message, e);
             }

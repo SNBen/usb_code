@@ -37,7 +37,11 @@ namespace SKKey.http
             return str;
         }
 
-        private static bool CheckValidationResult(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors)
+        private static bool CheckValidationResult(
+            object sender, 
+            X509Certificate certificate, 
+            X509Chain chain, 
+            SslPolicyErrors errors)
         {
             return true;
         }

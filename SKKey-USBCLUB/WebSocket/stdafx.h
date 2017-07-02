@@ -10,8 +10,11 @@
 #include <stdio.h>
 #include <tchar.h>
 
+#include <string>
+
 
 long long GetCurrentStamp64();
+std::string TSM_Init(std::string type, std::string content, bool request, bool async);
 
 #pragma comment(lib,"jsoncpp.lib")
 

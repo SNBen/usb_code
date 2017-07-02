@@ -1,127 +1,620 @@
-2017-07-02 09:09:20,325 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
-2017-07-02 09:09:20,337 [1] INFO  SKKey.config.ConfigManager [61] - 配置文件不存在
-2017-07-02 09:09:20,343 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Users\Ben\Desktop\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
-2017-07-02 09:09:20,405 [1] INFO  SKKey.config.ConfigManager [137] - 配置载入成功
-2017-07-02 09:09:20,662 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:21,920 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:21,922 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:21,923 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:21,924 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:21,924 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:23,070 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:23,070 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:23,070 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:23,070 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:23,070 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:24,223 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:24,223 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:24,223 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:24,224 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:24,224 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:25,378 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:25,378 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:25,378 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:25,378 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:25,378 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:25,953 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [56] - taskserver connect 失败
-2017-07-02 09:09:25,953 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
-2017-07-02 09:09:26,023 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [196] - request:{"id":1498957760657,"type":"keepalive","content":null,"parameters":{},"createTime":1498957760656,"request":true,"async":false}
-2017-07-02 09:09:26,025 [tokenThread] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:26,025 [tokenThread] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:26,025 [tokenThread] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:26,534 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:26,534 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:26,535 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:26,535 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:26,535 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:27,690 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:27,690 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:27,690 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:27,690 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:27,690 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:28,847 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:28,847 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:28,847 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:28,847 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:28,848 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:30,000 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:30,000 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:30,000 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:30,000 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:30,000 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:31,165 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:31,165 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:31,165 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:31,165 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:31,165 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:32,315 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:32,315 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:32,315 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:32,315 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:32,315 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:33,474 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:33,474 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:33,474 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:33,474 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:33,474 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:34,631 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:34,631 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:34,631 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:34,631 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:34,631 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:35,796 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:35,797 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:35,797 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:35,797 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:35,797 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:36,948 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:36,948 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:36,948 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:36,948 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:36,948 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:37,338 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [221] - response:null
-2017-07-02 09:09:38,100 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:38,101 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:38,101 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:38,101 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:38,101 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:39,266 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:39,266 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:39,267 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:39,267 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:39,268 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:40,412 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:40,412 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:40,412 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:40,412 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:40,412 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:41,561 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:41,561 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:41,561 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:41,561 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:41,561 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:42,713 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:42,713 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:42,713 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:42,713 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:42,714 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:43,861 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:43,861 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:43,861 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:43,861 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:43,861 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:45,024 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:45,024 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:45,024 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:45,025 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:45,025 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:46,171 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:46,171 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:46,171 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:46,171 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:46,172 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
-2017-07-02 09:09:47,332 [7] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
-2017-07-02 09:09:47,332 [7] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
-2017-07-02 09:09:47,332 [7] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
-2017-07-02 09:09:47,332 [7] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
-2017-07-02 09:09:47,332 [7] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:28,212 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Work.old\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-07-02 14:40:28,225 [1] INFO  SKKey.config.ConfigManager [81] - 配置载入成功
+2017-07-02 14:40:28,227 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Work.old\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-07-02 14:40:28,276 [1] INFO  SKKey.config.ConfigManager [137] - 配置载入成功
+2017-07-02 14:40:28,371 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:29,667 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:29,668 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:29,671 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:29,672 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:29,672 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:30,944 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:30,944 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:30,945 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:30,945 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:30,945 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:31,238 [1] INFO  SKKey.config.ConfigManager [58] - load 配置文件 D:\Work.old\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.xml
+2017-07-02 14:40:31,239 [1] INFO  SKKey.config.ConfigManager [81] - 配置载入成功
+2017-07-02 14:40:31,239 [1] INFO  SKKey.config.ConfigManager [87] - load 配置文件 D:\Work.old\usb_code\SKKey-USBCLUB\SKKey\bin\Release\config.json
+2017-07-02 14:40:31,239 [1] INFO  SKKey.config.ConfigManager [137] - 配置载入成功
+2017-07-02 14:40:31,240 [1] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:32,218 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:32,218 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:32,218 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:32,218 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:32,218 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:32,510 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:32,510 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:32,510 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:32,511 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:32,511 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:33,482 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:33,482 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:33,482 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:33,482 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:33,482 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:33,605 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [56] - taskserver connect 失败
+2017-07-02 14:40:33,605 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-07-02 14:40:33,659 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [196] - request:{"id":1498977628368,"type":"keepalive","content":null,"parameters":{},"createTime":1498977628367,"request":true,"async":false}
+2017-07-02 14:40:33,661 [tokenThread] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:33,661 [tokenThread] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:33,661 [tokenThread] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:33,772 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:33,772 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:33,773 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:33,773 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:33,773 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:34,738 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:34,738 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:34,739 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:34,739 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:34,739 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:35,030 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:35,031 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:35,031 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:35,031 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:35,032 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:35,992 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:35,992 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:35,999 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:35,999 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:35,999 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:36,282 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:36,282 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:36,283 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:36,283 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:36,283 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:36,459 [1] INFO  SKKey.websocket.TaskWebsocketClient [56] - taskserver connect 失败
+2017-07-02 14:40:36,459 [1] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-07-02 14:40:37,241 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:37,241 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:37,241 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:37,242 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:37,242 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:37,543 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:37,543 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:37,543 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:37,543 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:37,544 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:38,489 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:38,489 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:38,489 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:38,489 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:38,489 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:38,796 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:38,796 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:38,796 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:38,796 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:38,796 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:39,724 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:39,724 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:39,724 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:39,724 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:39,724 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:40,039 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:40,039 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:40,039 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:40,039 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:40,039 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:40,944 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:40,944 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:40,944 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:40,944 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:40,944 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:41,260 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:41,260 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:41,261 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:41,261 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:41,261 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:42,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:42,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:42,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:42,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:42,173 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:42,498 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:42,498 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:42,498 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:42,498 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:42,498 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:43,396 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:43,396 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:43,396 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:43,396 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:43,396 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:43,713 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:43,713 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:43,713 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:43,713 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:43,713 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:44,612 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:44,612 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:44,612 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:44,612 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:44,612 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:44,623 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [221] - response:null
+2017-07-02 14:40:44,945 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:44,945 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:44,946 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:44,946 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:44,946 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:45,842 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:45,843 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:45,843 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:45,843 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:45,843 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:46,175 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:46,176 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:46,176 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:46,176 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:46,176 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:47,071 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:47,071 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:47,072 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:47,072 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:47,072 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:47,411 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:47,412 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:47,412 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:47,412 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:47,412 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:48,304 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:48,304 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:48,304 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:48,304 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:48,304 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:48,642 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:48,642 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:48,642 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:48,642 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:48,642 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:49,542 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:49,542 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:49,542 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:49,542 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:49,542 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:49,890 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:49,890 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:49,890 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:49,890 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:49,890 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:50,804 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:50,804 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:50,804 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:50,804 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:50,804 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:51,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:51,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:51,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:51,173 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:51,173 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:52,092 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:52,092 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:52,092 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:52,092 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:52,093 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:52,466 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:52,466 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:52,467 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:52,467 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:52,467 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:53,396 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:53,397 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:53,397 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:53,397 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:53,397 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:53,762 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:53,763 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:53,763 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:53,764 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:53,764 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:54,706 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:54,706 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:54,706 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:54,706 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:54,706 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:55,083 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:55,083 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:55,083 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:55,083 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:55,083 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:56,011 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:56,011 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:56,011 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:56,011 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:56,011 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:57,315 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:57,315 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:57,316 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:57,316 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:57,316 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:58,616 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:58,617 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:58,617 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:58,617 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:58,617 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:40:59,914 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:40:59,914 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:40:59,914 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:40:59,914 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:40:59,914 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:01,219 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:01,219 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:01,219 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:01,219 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:01,219 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:01,788 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:01,788 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:01,788 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:01,788 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:01,789 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:02,524 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:02,525 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:02,525 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:02,525 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:02,525 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:03,096 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:03,096 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:03,097 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:03,097 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:03,097 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:03,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:03,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:03,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:03,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:03,825 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:04,402 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:04,402 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:04,402 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:04,402 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:04,402 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:05,132 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:05,132 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:05,132 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:05,132 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:05,132 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:05,719 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:05,719 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:05,720 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:05,720 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:05,720 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:06,432 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:06,432 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:06,432 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:06,433 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:06,433 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:07,024 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:07,025 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:07,025 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:07,025 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:07,025 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:07,729 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:07,729 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:07,729 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:07,729 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:07,730 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:08,314 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:08,314 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:08,314 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:08,314 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:08,314 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:09,032 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:09,032 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:09,032 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:09,032 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:09,032 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:09,612 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:09,612 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:09,613 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:09,613 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:09,613 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:10,326 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:10,327 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:10,327 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:10,327 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:10,327 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:10,923 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:10,923 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:10,924 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:10,924 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:10,924 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:11,621 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:11,621 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:11,621 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:11,621 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:11,621 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:12,212 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:12,212 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:12,213 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:12,213 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:12,213 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:12,933 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:12,933 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:12,933 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:12,933 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:12,934 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:13,509 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:13,509 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:13,509 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:13,509 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:13,509 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:14,230 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:14,230 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:14,230 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:14,231 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:14,231 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:14,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:14,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:14,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:14,825 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:14,825 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:15,532 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:15,533 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:15,533 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:15,533 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:15,533 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:16,139 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:16,139 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:16,139 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:16,139 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:16,139 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:16,845 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:16,845 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:16,845 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:16,845 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:16,845 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:17,446 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:17,446 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:17,447 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:17,447 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:17,448 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:18,149 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:18,150 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:18,150 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:18,150 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:18,150 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:18,751 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:18,751 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:18,751 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:18,751 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:18,752 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:19,462 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:19,462 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:19,462 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:19,462 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:19,462 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:20,055 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:20,055 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:20,055 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:20,056 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:20,056 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:20,739 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:20,739 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:20,739 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:20,739 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:20,739 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:21,330 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:21,330 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:21,330 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:21,330 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:21,330 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:21,980 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:21,981 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:21,981 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:21,981 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:21,981 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:22,555 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:22,556 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:22,556 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:22,556 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:22,556 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:23,191 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:23,192 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:23,192 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:23,192 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:23,192 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:23,764 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:23,765 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:23,765 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:23,765 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:23,765 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:24,404 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:24,404 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:24,404 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:24,404 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:24,404 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:24,988 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:24,988 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:24,988 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:24,988 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:24,988 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:25,627 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:25,628 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:25,628 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:25,628 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:25,628 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:26,222 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:26,223 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:26,223 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:26,223 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:26,223 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:26,859 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:26,859 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:26,860 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:26,860 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:26,860 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:27,463 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:27,463 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:27,463 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:27,463 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:27,463 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:28,094 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:28,094 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:28,095 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:28,095 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:28,095 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:28,714 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:28,714 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:28,714 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:28,714 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:28,715 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:29,338 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:29,338 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:29,338 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:29,338 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:29,338 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:29,962 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:29,962 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:29,962 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:29,963 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:29,963 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:30,589 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:30,590 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:30,590 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:30,590 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:30,591 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:31,228 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:31,228 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:31,228 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:31,228 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:31,228 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:31,858 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:31,858 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:31,858 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:31,858 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:31,858 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:32,492 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:32,492 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:32,492 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:32,492 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:32,492 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:33,120 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:33,120 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:33,121 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:33,121 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:33,121 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:33,761 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:33,761 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:33,761 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:33,761 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:33,761 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:34,378 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:34,379 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:34,379 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:34,379 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:34,379 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:35,032 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:35,032 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:35,032 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:35,033 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:35,033 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:35,661 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:35,661 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:35,661 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:35,661 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:35,661 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:36,318 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:36,319 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:36,319 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:36,319 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:36,319 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:36,940 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:36,940 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:36,941 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:36,941 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:36,941 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:37,607 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:37,608 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:37,608 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:37,608 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:37,608 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:38,230 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:38,230 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:38,230 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:38,230 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:38,230 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:38,890 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:38,891 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:38,891 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:38,891 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:38,891 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:39,507 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:39,507 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:39,507 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:39,507 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:39,507 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:40,166 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:40,166 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:40,166 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:40,167 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:40,167 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:40,783 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:40,784 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:40,784 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:40,784 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:40,784 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:41,447 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:41,447 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:41,447 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:41,447 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:41,447 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:42,071 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:42,072 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:42,072 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:42,072 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:42,072 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:42,727 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:42,728 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:42,728 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:42,728 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:42,728 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:43,356 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:43,356 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:43,356 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:43,357 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:43,357 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:44,016 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:44,016 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:44,017 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:44,017 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:44,017 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:44,624 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:44,637 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:44,637 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:44,637 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:44,637 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:44,637 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:45,286 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:45,286 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:45,286 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:45,286 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:45,286 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:45,884 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:45,884 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:45,884 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:45,884 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:45,884 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:45,908 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:45,909 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:45,909 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:45,909 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:45,910 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:46,560 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:46,560 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:46,560 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:46,560 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:46,560 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:47,161 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:47,161 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:47,161 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:47,161 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:47,161 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:47,185 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:47,186 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:47,186 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:47,186 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:47,186 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
+2017-07-02 14:41:47,836 [3] ERROR SKKey.websocket.TaskWebsocketClient [138] - websocket_Error:
+2017-07-02 14:41:47,836 [3] ERROR SKKey.websocket.TaskWebsocketClient [139] - WebSocket4Net.WebSocket
+2017-07-02 14:41:47,836 [3] ERROR SKKey.websocket.TaskWebsocketClient [140] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-07-02 14:41:47,837 [3] ERROR SKKey.websocket.TaskWebsocketClient [145] - taskserver 断开
+2017-07-02 14:41:47,837 [3] INFO  SKKey.websocket.TaskWebsocketClient [79] - 尝试连接taskServer：ws://server.ngrok.cc:7088/websocket
