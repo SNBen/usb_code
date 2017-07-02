@@ -7,14 +7,16 @@ namespace SKKey.task
 {
     class TaskHandle
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        public static string GET_TOKEN = "JX_CLIENT_GETSESSIONCLIENTTASK";
+        private static readonly log4net.ILog log = 
+            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public static string POST_TOKEN = "JX_CLIENT_SUBMITTASKRESULT";
+        public static string GET_TOKEN = "pushTask";
+        //public static string GET_TOKEN = "JX_CLIENT_GETSESSIONCLIENTTASK";
+        public static string POST_TOKEN = "submitTaskResult";
 
         public TaskHandle()
-        {
-
+        { 
+                
         }
 
         public static void handle(TaskSocketMessage msg)
@@ -26,15 +28,13 @@ namespace SKKey.task
             }
             if (returnSocketMessage != null)
             {
-                try
-                {
+                try {
                     TaskWebsocketClient.Instance.sendASyncResponse(returnSocketMessage);
                 }
-                catch (Exception e)
-                {
+                catch (Exception e) {
                     log.Error(e.Message, e);
                 }
-
+                
             }
         }
     }

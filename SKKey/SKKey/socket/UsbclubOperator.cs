@@ -1,17 +1,16 @@
-﻿using System;
+﻿using SKKey.utils;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using SKKey.utils;
-using System.Net.Sockets;
 using System.Diagnostics;
-
+using System.Net.Sockets;
+using System.Runtime.InteropServices;
 
 namespace SKKey.socket
 {
-    class UsbclubOperator
+    internal class UsbclubOperator
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog log 
+            = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private const string OPEN_PORT_CMD_PRE = "0000001180";
         private const string CLOSE_PORT_CMD_PRE = "0000001181";
@@ -20,11 +19,25 @@ namespace SKKey.socket
         private const int REMOTE_CONL_PORT = 8110;
         private const string STR_QZGBDK_JGM_A1 = "A1";
 
+        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Init", CharSet = CharSet.Auto)]
+        public static extern int USBShareUnit_Init();
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "OpenUSBPortByID", CharSet = CharSet.Auto)]
+        public static extern int OpenUSBPortByID(int nUSBPort, String strIPAddrPort);
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "CloseUSBPortByID", CharSet = CharSet.Auto)]
+        public static extern int CloseUSBPortByID(int nUSBPort, bool bCompulsive, ref String strIPAddrPort);
+
+        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Fini", CharSet = CharSet.Auto)]
+        public static extern int USBShareUnit_Fini();
+
         /**
          * 根据机柜管理器，发送的端口信息字符串，打开端口
+         * 068020002389_127.0.0.1_8
          * dictionary result:0 成功
          *            result:非0 失败  msg:错误信息
          */
+
         public static Dictionary<string, string> openPort(string portInfo)
         {
             Dictionary<string, string> resultMap = new Dictionary<string, string>();
@@ -245,10 +258,6 @@ namespace SKKey.socket
                 if (p.Start())
                 {
                     log.Info("本地挂载" + ip + "机柜端口,树形描述：" + sxms + ",参数：" + param);
-                    //p.StandardInput.WriteLine(param);
-                    //p.StandardInput.WriteLine("exit");
-                    //msg = p.StandardOutput.ReadToEnd();
-                    //log.Info("本地挂在设备，返回数据：" + msg);
                     p.Close();
                 }
                 else

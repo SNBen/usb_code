@@ -11,7 +11,8 @@ namespace SKKey.config
 {
     class ConfigManager
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog log = 
+            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private static ConfigManager instance = null;
 
         public Config Config
@@ -57,7 +58,7 @@ namespace SKKey.config
             log.Info("load 配置文件 " + filepath);
             if (!File.Exists(filepath))
             {
-                log.Info("配置文件不存在");
+                log.Error("配置文件不存在");
                 return;
             }
 
@@ -77,7 +78,6 @@ namespace SKKey.config
                 log.Error("载入配置文件失败", ex);
                 return;
             }
-            log.Info("配置载入成功");
         }
 
         public void loadJSON()
@@ -123,14 +123,16 @@ namespace SKKey.config
                     Config.taskServerPort = map["taskServerPort"];
                 }
 
+                if (map.ContainsKey("controlVersion"))
+                {
+                    Config.controlVersion = map["controlVersion"];
+                }
             }
             catch (Exception ex)
             {
                 log.Error("载入配置文件失败", ex);
                 return;
             }
-            log.Info("配置载入成功");
         }
-
     }
 }

@@ -7,8 +7,8 @@ namespace SKKey.ocx
     class WebOcxAccess
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-        private AxCryp_Ctl.AxCryptCtl ocx { get; set; }
+        
+        private AxCryp_Ctl.AxCryptCtl ocx{ get; set; }
 
         private static WebOcxAccess instance;
 
@@ -19,8 +19,7 @@ namespace SKKey.ocx
 
         public static WebOcxAccess Instance
         {
-            get
-            {
+            get {
                 if (instance == null)
                 {
                     throw new Exception("WebOcxAccess 没有被初始化");
@@ -56,7 +55,7 @@ namespace SKKey.ocx
 
         public static void close()
         {
-
+            
             if (Instance.ocx.IsDeviceOpened() != 0)
             {
                 log.Info("关闭设备");

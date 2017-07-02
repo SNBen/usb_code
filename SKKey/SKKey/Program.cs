@@ -1,25 +1,21 @@
-﻿using System;
+﻿using SKKey.config;
+using SKKey.form;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
 using System.Threading;
 using System.Windows.Forms;
-using SKKey.form;
-using SKKey.config;
-using System.Diagnostics;
-using SKKey.socket;
-using SKKey.task;
-using SKKey.ocx;
-
 
 namespace SKKey
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -28,16 +24,14 @@ namespace SKKey
             Mutex m = new Mutex(false, Application.ProductName, out bCreatedNew);
             if (!bCreatedNew)
             {
-                MessageBox.Show("此程序已运行！");
+                MessageBox.Show("此程序已运行!");
                 return;
             }
-
-            Config config = ConfigManager.Instance.Config;
 
             Process[] proc = Process.GetProcessesByName("SKKeyWatch");
             if (proc.Length == 0)
             {
-                System.Diagnostics.ProcessStartInfo Info = new System.Diagnostics.ProcessStartInfo();
+                var Info = new System.Diagnostics.ProcessStartInfo();
                 Info.FileName = "SKKeyWatch.exe";
                 Info.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
 
@@ -49,10 +43,10 @@ namespace SKKey
                 }
                 catch (System.ComponentModel.Win32Exception)
                 {
-
                 }
             }
 
+            Config config = ConfigManager.Instance.Config;
             Application.Run(new MainForm());
         }
     }
