@@ -72,6 +72,7 @@ namespace SKKey.task
 
         public TaskSocketMessage getTocken(String ym, String ymbb, String sh, String password, String rwId)
         {
+            log.Info(String.Format("ym:{{0}};ymbb:{{1}}", ym, ymbb));
             TaskSocketMessage return_tsm = new TaskSocketMessage();
             return_tsm.type = TaskHandle.POST_TOKEN;
             return_tsm.parameters["rwid"] = rwId;
@@ -337,7 +338,7 @@ namespace SKKey.task
 
                     TaskSocketMessage returnSocketMessage = new TaskSocketMessage();
                     returnSocketMessage.type = TaskHandle.POST_TOKEN;
-                    returnSocketMessage.parameters["rwid"] = request_tsm.parameters["rwid"];
+                    //returnSocketMessage.parameters["rwid"] = request_tsm.parameters["rwid"];
 
                     returnSocketMessage.parameters["code"] = CODE_USB_CLUB_ERROR;
                     returnSocketMessage.parameters["msg"] = "打开机柜端口失败";

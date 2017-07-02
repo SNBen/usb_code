@@ -78,7 +78,6 @@ namespace SKKey.config
                 log.Error("载入配置文件失败", ex);
                 return;
             }
-            log.Info("配置载入成功");
         }
 
         public void loadJSON()
@@ -134,7 +133,6 @@ namespace SKKey.config
                 log.Error("载入配置文件失败", ex);
                 return;
             }
-            log.Info("配置载入成功");
         }
     }
 }
