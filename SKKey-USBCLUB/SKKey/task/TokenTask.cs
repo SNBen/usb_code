@@ -64,7 +64,7 @@ namespace SKKey.task
                 {
                     return null;
                 }
-                tsm = doHandle(requestTaskSocketMessage);
+                tsm = doHandleEx(requestTaskSocketMessage);
             }
 
             return tsm;
@@ -72,7 +72,7 @@ namespace SKKey.task
 
         public TaskSocketMessage getTocken(String ym, String ymbb, String sh, String password, String rwId)
         {
-            log.Info(String.Format("ym:{{0}};ymbb:{{1}}", ym, ymbb));
+            log.Info(String.Format("ym:{0};ymbb:{1}", ym, ymbb));
             TaskSocketMessage return_tsm = new TaskSocketMessage();
             return_tsm.type = TaskHandle.POST_TOKEN;
             return_tsm.parameters["rwid"] = rwId;
@@ -108,6 +108,7 @@ namespace SKKey.task
             return_tsm.parameters["sh"] = sh;
 
             String clientHello = WebOcxAccess.clientHello();
+            //String clientHello = "306E0201033055310B300906035504061302636E310D300B060355040B1E0400430041310D300B06035504081E0453174EAC3119301706035504031E104E2D56FD7A0E52A18BA48BC14E2D5FC3310D300B06035504071E0453174EAC02070201000001A087A209310702010102020402";//;= WebOcxAccess.clientHello();
             FpdkHttpResult fpdkHttpResult = null;
             try
             {
@@ -143,6 +144,7 @@ namespace SKKey.task
                 return_tsm.parameters["msg"] = "调用服务器失败!";
                 return return_tsm;
             }
+            log.Info(String.Format("key1:{0};key2:{1}", fpdkHttpResult.key1,fpdkHttpResult.key2));
             if (fpdkHttpResult.key1.Equals("00"))
             {
                 return_tsm.parameters["code"] = "904-00";
@@ -253,7 +255,7 @@ namespace SKKey.task
 
         public TaskSocketMessage doHandleEx(TaskSocketMessage request_tsm)
         {
-            log.Info("doHandle: start" + request_tsm.content);
+            log.Info("doHandleEx: start" + request_tsm.content);
 
             puttask _puttask = JsonConvert.DeserializeObject<puttask>(request_tsm.content);
             pt_param _param = JsonConvert.DeserializeObject<pt_param>(_puttask.param);
@@ -268,18 +270,16 @@ namespace SKKey.task
             }
             else
             {
-                ////////////////////////////////////////////////////////////////
-                // 0680220002389-12.0.0.0_13
                 XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort, ref portInfo, ref password);
                 log.Info("打开机柜..." + portInfo + iUSBPort);
-                int iResult = UsbclubOperator.OpenUSBPortByID(iUSBPort, ref portInfo);
+                int iResult = UsbclubOperator.OpenUSBPortByID(iUSBPort, portInfo);
                 if (0 != iResult)
                 {
                     log.Error("打开设备失败：" + portInfo);
 
                     TaskSocketMessage returnSocketMessage = new TaskSocketMessage();
                     returnSocketMessage.type = TaskHandle.POST_TOKEN;
-                    returnSocketMessage.parameters["rwid"] = request_tsm.parameters["rwid"];
+                    //returnSocketMessage.parameters["rwid"] = request_tsm.parameters["rwid"];
 
                     returnSocketMessage.parameters["code"] = CODE_USB_CLUB_ERROR;
                     returnSocketMessage.parameters["msg"] = "打开机柜端口失败";
@@ -290,27 +290,30 @@ namespace SKKey.task
             TaskSocketMessage return_tsm = getTocken(_param.url, _param.ymbb, sh, password, _puttask.jxKhdwId);
             if (portInfo != null)
             {
-                UsbclubOperator.closePort(portInfo);
+                bool bCompulsive = true;
+                UsbclubOperator.CloseUSBPortByID(iUSBPort,bCompulsive, ref portInfo);
             }
+            log.Info("code ： " + return_tsm.parameters["code"]);
             if (!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
             {
                 _puttask.errno = return_tsm.parameters["code"];
+                _puttask.sbyy = return_tsm.parameters["msg"];
             }
             else
             {
-                _puttask.result = String.Format("{\"token\":\"{0}\"}", return_tsm.parameters["token"]);
+                _puttask.errno = return_tsm.parameters["code"];
+                _puttask.result = "{" + String.Format(@" ""token"":""{0}"" ", return_tsm.parameters["token"]) + "}";
             }
 
             request_tsm.content = JsonConvert.SerializeObject(_puttask);
             request_tsm.type = "submitTaskResult";
-            log.Info("doHandle end:" + JsonConvert.SerializeObject(request_tsm));
+            log.Info("doHandleEx end:" + JsonConvert.SerializeObject(request_tsm));
             return request_tsm;
         }
 
         public TaskSocketMessage doHandle(TaskSocketMessage request_tsm)
         {
             log.Info("doHandle: start" + request_tsm.content);
-
             puttask _puttask = JsonConvert.DeserializeObject<puttask>(request_tsm.content);
             pt_param _param = JsonConvert.DeserializeObject<pt_param>(_puttask.param);
             String sh = _param.nsrsbh;//_puttask.param["nsrsbh"];
@@ -331,6 +334,7 @@ namespace SKKey.task
                 //XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort,ref portInfo, ref password);
 
                 log.Info("打开机柜..." + portInfo);
+                Thread.Sleep(10000);
                 Dictionary<String, String> openInfo = UsbclubOperator.openPort(portInfo);
                 if (!"0".Equals(openInfo["result"]))
                 {
@@ -351,7 +355,7 @@ namespace SKKey.task
             {
                 UsbclubOperator.closePort(portInfo);
             }
-
+            log.Info("code ： " + return_tsm.parameters["code"]);
             if (!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
             {
                 _puttask.errno = return_tsm.parameters["code"];
@@ -359,7 +363,8 @@ namespace SKKey.task
             }
             else
             {
-                _puttask.result = String.Format("{\"token\":\"{0}\"}", return_tsm.parameters["token"]);
+                _puttask.errno = return_tsm.parameters["code"];
+                _puttask.result =  "{" + String.Format(@" ""token"":""{0}"" ", return_tsm.parameters["token"]) + "}";
             }
 
             request_tsm.content = JsonConvert.SerializeObject(_puttask);

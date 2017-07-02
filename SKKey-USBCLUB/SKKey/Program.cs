@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using SKKey.form;
 using SKKey.config;
 using System.Diagnostics;
+using SKKey.socket;
 namespace SKKey
 {
     static class Program
@@ -16,6 +17,8 @@ namespace SKKey
         [STAThread]
         static void Main()
         {
+            //var strTemp =  String.Format(@"\{""token "":""{0}""\}", "123");
+            //UsbclubOperator.USBShareUnit_Init();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -48,8 +51,8 @@ namespace SKKey
             }
              
             Application.Run(new MainForm());
+            //UsbclubOperator.USBShareUnit_Fini();
 
-            
         }
     }
 }

@@ -23,7 +23,7 @@ namespace SKKey.socket
         public static extern int USBShareUnit_Init();
 
         [DllImport("USBShareUnit.dll", EntryPoint = "OpenUSBPortByID", CharSet = CharSet.Auto)]
-        public static extern int OpenUSBPortByID(int nUSBPort, ref String strIPAddrPort);
+        public static extern int OpenUSBPortByID(int nUSBPort, String strIPAddrPort);
 
         [DllImport("USBShareUnit.dll", EntryPoint = "CloseUSBPortByID", CharSet = CharSet.Auto)]
         public static extern int CloseUSBPortByID(int nUSBPort, bool bCompulsive, ref String strIPAddrPort);

@@ -12,7 +12,7 @@ namespace SKKey.task
 
         public static string GET_TOKEN = "pushTask";
         //public static string GET_TOKEN = "JX_CLIENT_GETSESSIONCLIENTTASK";
-        public static string POST_TOKEN = "JX_CLIENT_SUBMITTASKRESULT";
+        public static string POST_TOKEN = "submitTaskResult";
 
         public TaskHandle()
         { 

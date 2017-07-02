@@ -124,8 +124,8 @@ namespace SKKey.form
             int iResult = UsbclubOperator.USBShareUnit_Init();
             MessageBox.Show(String.Format("{0}", iResult));
 
-            String USBID = "192.168.101.222:10001:3240";
-            iResult = UsbclubOperator.OpenUSBPortByID(13, ref USBID);
+            String USBID = "192.168.8.251:10001:3240";
+            iResult = UsbclubOperator.OpenUSBPortByID(13, USBID);
             MessageBox.Show(String.Format("{0}", iResult));
 
             String sh = SH_textBox.Text;

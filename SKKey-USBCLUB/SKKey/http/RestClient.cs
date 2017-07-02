@@ -1,26 +1,23 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using Newtonsoft.Json;
-
-using System.Collections.Generic;
 using System.Net.Security;
-
 using System.Security.Cryptography.X509Certificates;
 
 namespace SKKey.http
 {
-    class RestClient
+    internal class RestClient
     {
-        private static readonly log4net.ILog log = 
+        private static readonly log4net.ILog log =
             log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        private static readonly string DefaultUserAgent = 
+        private static readonly string DefaultUserAgent =
             "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)";
 
         public RestClient()
         {
-
         }
 
         // 将 HttpWebResponse 返回结果转换成 string
@@ -38,16 +35,15 @@ namespace SKKey.http
         }
 
         private static bool CheckValidationResult(
-            object sender, 
-            X509Certificate certificate, 
-            X509Chain chain, 
+            object sender,
+            X509Certificate certificate,
+            X509Chain chain,
             SslPolicyErrors errors)
         {
             return true;
         }
 
-
-        public static string post(string url, string jsonBody, bool isJSON,int retryTimes)
+        public static string post(string url, string jsonBody, bool isJSON, int retryTimes)
         {
             log.Info("retry :" + retryTimes + " url：" + url + " jsonbody:" + jsonBody);
             string json = "";
@@ -66,7 +62,6 @@ namespace SKKey.http
                 }
 
                 request.UserAgent = DefaultUserAgent;
-
 
                 log.Debug("call rest post url=" + url);
                 log.Debug("postdata:\r\n" + jsonBody);
@@ -90,7 +85,7 @@ namespace SKKey.http
                 }
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 json = getResponseString(response);
-                log.Info("response:\r\n" +"url \r\n"+ url +"\r\njsonBody:\r\n"+jsonBody+"\r\n res:\r\n"+ json);
+                log.Info("response:\r\n" + "url \r\n" + url + "\r\njsonBody:\r\n" + jsonBody + "\r\n res:\r\n" + json);
                 if (response.StatusCode != HttpStatusCode.OK)
                 {
                     throw new Exception("服务器返回异常");
@@ -105,7 +100,7 @@ namespace SKKey.http
                     throw new Exception("http 请求失败");
                 }
                 retryTimes++;
-                log.Error("retry :"+ retryTimes+ " url："+url + " jsonbody:"+jsonBody);
+                log.Error("retry :" + retryTimes + " url：" + url + " jsonbody:" + jsonBody);
                 return post(url, jsonBody, isJSON, retryTimes);
             }
         }
@@ -115,22 +110,21 @@ namespace SKKey.http
             string parastr = "";
             if (para == null)
             {
-                return post(url, "", false,0);
+                return post(url, "", false, 0);
             }
             foreach (string key in para.Keys)
             {
                 parastr += key + "=" + para[key] + "&";
             }
-            return post(url, parastr, false,0);
+            return post(url, parastr, false, 0);
         }
-
 
         public static string postJSON(string url, object ob)
         {
             string parastr = "";
             if (ob == null)
             {
-                return post(url, "", false,0);
+                return post(url, "", false, 0);
             }
             try
             {
@@ -141,7 +135,7 @@ namespace SKKey.http
                 log.Error(e.Message, e);
                 throw new Exception("JSON 序列化错误");
             }
-            return post(url, parastr, true,0);
+            return post(url, parastr, true, 0);
         }
 
         public static T postJSONPCallback<T>(string url, Dictionary<string, string> ob)
@@ -174,18 +168,5 @@ namespace SKKey.http
             }
             return JsonConvert.DeserializeObject<T>(ret);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
