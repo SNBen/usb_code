@@ -2,6 +2,11 @@
 #define _CONNECTION_METADATA_H_A0CBB61C_CF90_41C0_B750_5838FC2CF383_
 #pragma once
 #include <websocketpp/client.hpp>
+#include <LogExt.h>
+#include <json/writer.h>
+#include <json/json.h>
+
+#include <boost/date_time/posix_time/posix_time.hpp>
 
 typedef websocketpp::client<websocketpp::config::asio_client> ws_client;
 
@@ -21,9 +26,7 @@ public:
         m_status = "Open";
         ws_client::connection_ptr con = client->get_con_from_hdl(hdl);
         m_server = con->get_response_header("Server");
-        std::string strInit(R"({"id":1498960459621,"type":"initDevice","content":"{\"GUID\":\"{B69392DF-209B-4102-819B-3C34D9969B86}\",\"CompanyName\":\"\",\"ACTION\":\"1\",\"TaxCodeList\":[\"91500000747150540A\",\"110102681953105\"],\"TIME\":\"7/2/2017 9:54:23 AM\"}","parameters":{},"createTime":1498960463676,"request":true,"async":false})");
-        websocketpp::lib::error_code ec;
-        client->send(hdl, strInit, websocketpp::frame::opcode::text, ec);
+        initdevice(client, hdl);
     }
 
     void on_fail(ws_client * client, websocketpp::connection_hdl hdl)
@@ -70,6 +73,41 @@ public:
     void record_send_message(std::string message)
     {
         m_messages.push_back(">> " + message);
+    }
+
+    void initdevice(ws_client * client, websocketpp::connection_hdl hdl)
+    {
+        using namespace boost::posix_time;
+        using namespace boost::gregorian;
+        Json::FastWriter styled_writer;
+        ptime now = second_clock::universal_time();
+        std::cout << GetCurrentStamp64() << std::endl;
+
+        Json::Value content_;
+        content_["GUID"] = "B69392DF-209B-4102-819B-3C34D9969B86";
+        content_["CompanyName"] = "";
+        content_["TaxCodeList"].append("91500000747150540A");
+        content_["TaxCodeList"].append("110102681953105");
+        content_["TIME"] = to_iso_extended_string(now);
+
+        Json::Value initDevice_;
+        initDevice_["id"] = GetCurrentStamp64();
+        initDevice_["type"] = "initDevice";
+        initDevice_["content"] = styled_writer.write(content_);
+        initDevice_["parameters"] = Json::Value::null;
+        initDevice_["request"] = Json::Value(true);
+        initDevice_["async"] = Json::Value(false);
+        initDevice_["createTime"] = GetCurrentStamp64();
+
+        LOG_MODULE_INFO("%s", styled_writer.write(initDevice_).c_str());
+        websocketpp::lib::error_code ec;
+        client->send(hdl, styled_writer.write(initDevice_), websocketpp::frame::opcode::text, ec);
+        
+        if (ec)
+        {
+            LOG_MODULE_ERR("> Error sending message: %s", ec.message().c_str());
+            return;
+        }
     }
 
     friend std::ostream & operator<< (std::ostream & out, connection_metadata const & data);

@@ -11,5 +11,8 @@
 #include <tchar.h>
 
 
+long long GetCurrentStamp64();
+
+#pragma comment(lib,"jsoncpp.lib")
 
 // TODO: reference additional headers your program requires here
