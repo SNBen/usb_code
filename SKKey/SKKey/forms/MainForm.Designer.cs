@@ -46,16 +46,18 @@ namespace SKKey.form
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.shBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sqmBox = new System.Windows.Forms.TextBox();
             this.axCryptCtl1 = new AxCryp_Ctl.AxCryptCtl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.taskServerIPBox = new System.Windows.Forms.TextBox();
+            this.taskServerPortBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axCryptCtl1)).BeginInit();
             this.SuspendLayout();
             // 
             // changeShButton
             // 
-            this.changeShButton.Location = new System.Drawing.Point(113, 245);
+            this.changeShButton.Location = new System.Drawing.Point(113, 354);
             this.changeShButton.Name = "changeShButton";
             this.changeShButton.Size = new System.Drawing.Size(75, 21);
             this.changeShButton.TabIndex = 1;
@@ -65,6 +67,10 @@ namespace SKKey.form
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.taskServerPortBox);
+            this.groupBox1.Controls.Add(this.taskServerIPBox);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.exitButton);
             this.groupBox1.Controls.Add(this.passwordBox2);
             this.groupBox1.Controls.Add(this.授权码);
@@ -74,19 +80,17 @@ namespace SKKey.form
             this.groupBox1.Controls.Add(this.passwordBox);
             this.groupBox1.Controls.Add(this.shBox);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.sqmBox);
             this.groupBox1.Controls.Add(this.changeShButton);
             this.groupBox1.Location = new System.Drawing.Point(3, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(487, 296);
+            this.groupBox1.Size = new System.Drawing.Size(487, 470);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "非机柜版";
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(291, 245);
+            this.exitButton.Location = new System.Drawing.Point(303, 354);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 21);
             this.exitButton.TabIndex = 14;
@@ -96,7 +100,7 @@ namespace SKKey.form
             // 
             // passwordBox2
             // 
-            this.passwordBox2.Location = new System.Drawing.Point(113, 208);
+            this.passwordBox2.Location = new System.Drawing.Point(113, 170);
             this.passwordBox2.Name = "passwordBox2";
             this.passwordBox2.PasswordChar = '*';
             this.passwordBox2.Size = new System.Drawing.Size(348, 21);
@@ -105,7 +109,7 @@ namespace SKKey.form
             // 授权码
             // 
             this.授权码.AutoSize = true;
-            this.授权码.Location = new System.Drawing.Point(32, 208);
+            this.授权码.Location = new System.Drawing.Point(32, 170);
             this.授权码.Name = "授权码";
             this.授权码.Size = new System.Drawing.Size(53, 12);
             this.授权码.TabIndex = 12;
@@ -133,7 +137,7 @@ namespace SKKey.form
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 154);
+            this.label3.Location = new System.Drawing.Point(32, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 9;
@@ -141,7 +145,7 @@ namespace SKKey.form
             // 
             // passwordBox
             // 
-            this.passwordBox.Location = new System.Drawing.Point(113, 151);
+            this.passwordBox.Location = new System.Drawing.Point(113, 113);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
             this.passwordBox.Size = new System.Drawing.Size(348, 21);
@@ -149,7 +153,7 @@ namespace SKKey.form
             // 
             // shBox
             // 
-            this.shBox.Location = new System.Drawing.Point(113, 105);
+            this.shBox.Location = new System.Drawing.Point(113, 67);
             this.shBox.Name = "shBox";
             this.shBox.Size = new System.Drawing.Size(348, 21);
             this.shBox.TabIndex = 5;
@@ -157,27 +161,11 @@ namespace SKKey.form
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 105);
+            this.label2.Location = new System.Drawing.Point(32, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 4;
             this.label2.Text = "税号";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "授权码";
-            // 
-            // sqmBox
-            // 
-            this.sqmBox.Location = new System.Drawing.Point(113, 60);
-            this.sqmBox.Name = "sqmBox";
-            this.sqmBox.Size = new System.Drawing.Size(348, 21);
-            this.sqmBox.TabIndex = 2;
             // 
             // axCryptCtl1
             // 
@@ -189,11 +177,43 @@ namespace SKKey.form
             this.axCryptCtl1.TabIndex = 0;
             this.axCryptCtl1.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 234);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "任务服务器IP";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(24, 287);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 12);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "任务服务器端口";
+            // 
+            // taskServerIPBox
+            // 
+            this.taskServerIPBox.Location = new System.Drawing.Point(113, 234);
+            this.taskServerIPBox.Name = "taskServerIPBox";
+            this.taskServerIPBox.Size = new System.Drawing.Size(348, 21);
+            this.taskServerIPBox.TabIndex = 17;
+            // 
+            // taskServerPortBox
+            // 
+            this.taskServerPortBox.Location = new System.Drawing.Point(113, 287);
+            this.taskServerPortBox.Name = "taskServerPortBox";
+            this.taskServerPortBox.Size = new System.Drawing.Size(348, 21);
+            this.taskServerPortBox.TabIndex = 18;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 314);
+            this.ClientSize = new System.Drawing.Size(496, 494);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.axCryptCtl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -216,8 +236,6 @@ namespace SKKey.form
         private AxCryp_Ctl.AxCryptCtl axCryptCtl1;
         private System.Windows.Forms.Button changeShButton;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox sqmBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox shBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -227,6 +245,10 @@ namespace SKKey.form
         private Label 授权码;
         private TextBox passwordBox2;
         private Button exitButton;
+        private TextBox taskServerPortBox;
+        private TextBox taskServerIPBox;
+        private Label label4;
+        private Label label1;
     }
 }
 

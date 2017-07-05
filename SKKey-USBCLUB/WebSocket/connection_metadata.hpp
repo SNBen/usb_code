@@ -55,12 +55,12 @@ public:
     {
         if (msg->get_opcode() == websocketpp::frame::opcode::text)
         {
-            LOG_MODULE_DEBUG("%s", msg->get_payload().c_str());
+            LOG_MODULE_INFO("%s", msg->get_payload().c_str());
             //m_messages.push_back("<<" + msg->get_payload());
         }
         else
         {
-            LOG_MODULE_DEBUG("%s", msg->get_payload().c_str());
+            LOG_MODULE_INFO("%s", msg->get_payload().c_str());
             //m_messages.push_back("<<" + websocketpp::utility::to_hex(msg->get_payload()));
         }
     }

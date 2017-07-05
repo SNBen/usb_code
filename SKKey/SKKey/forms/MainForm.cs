@@ -22,10 +22,15 @@ namespace SKKey.form
             TrayHelper trayHelper = new TrayHelper(this);
             WebOcxAccess.init(this.axCryptCtl1);
 
+            if(ConfigManager.Instance.Config.license == null)
+            {
+                ConfigManager.Instance.Config.license = Guid.NewGuid().ToString("B");
+            }
+
+            
+
             String sh = ConfigManager.Instance.Config.sh;
-
             String password = ConfigManager.Instance.Config.password;
-
             String license = ConfigManager.Instance.Config.license;
 
             if (sh != null)
@@ -40,27 +45,45 @@ namespace SKKey.form
                 passwordBox2.Text = password;
             }
 
-            if (license != null)
+            if (ConfigManager.Instance.Config.taskServerIP != null)
             {
-                sqmBox.Text = license;
+                taskServerIPBox.Text = ConfigManager.Instance.Config.taskServerIP;
             }
 
-            TokenTask.tockenTaskRequestThreadInit();
+            if (ConfigManager.Instance.Config.taskServerPort != null)
+            {
+                taskServerPortBox.Text = ConfigManager.Instance.Config.taskServerPort;
+            }
+
+            if (ConfigManager.Instance.Config.sh != null
+                && ConfigManager.Instance.Config.sh != null
+                && ConfigManager.Instance.Config.password != null
+                && ConfigManager.Instance.Config.taskServerIP != null
+                && ConfigManager.Instance.Config.taskServerPort != null)
+            {
+                TokenTask.tockenTaskRequestThreadInit();
+            }
         }
 
         private void changeShButton_Click(object sender, EventArgs e)
         {
-            String license = sqmBox.Text;
-
             String sh = shBox.Text;
 
             String password = passwordBox.Text;
 
             String password2 = passwordBox2.Text;
+            String StrIP = taskServerIPBox.Text;
+            String StrPort = taskServerPortBox.Text;
 
-            if (license == null || license.Trim().Length == 0)
+            if (StrIP == null || StrIP.Trim().Length == 0)
             {
-                MessageBox.Show("授权码不能为空！");
+                MessageBox.Show("服务器IP地址 不能为空！");
+                return;
+            }
+
+            if (StrPort == null || StrPort.Trim().Length == 0)
+            {
+                MessageBox.Show("服务器端口不能为空！");
                 return;
             }
 
@@ -82,24 +105,25 @@ namespace SKKey.form
                 return;
             }
 
+
             Dictionary<string, string> map = new Dictionary<string, string>();
-
-            map["license"] = license;
-
+            map["license"] = ConfigManager.Instance.Config.license;
             map["sh"] = sh;
-
             map["password"] = password;
+            map["taskServerIP"] = StrIP;
+            map["taskServerPort"] = StrPort;
 
             ConfigManager.writeJSONConfigAndInit(map);
             TokenTask.errorPassword = false;
             TokenTask.errorLicense = false;
             usedShLabel.Text = sh;
+
+            new TokenTask().InitDevice();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             onClose();
-
             System.Environment.Exit(0);
         }
 

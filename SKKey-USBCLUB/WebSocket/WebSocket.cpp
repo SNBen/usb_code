@@ -8,6 +8,7 @@
 
 #include <json/value.h>
 #include <json/writer.h>
+#include <json/reader.h>
 
 #include "websocket_endpoint.h"
 #include <boost/date_time/posix_time/posix_time.hpp>
@@ -48,7 +49,6 @@ void Test()
     using namespace boost::posix_time;
     
     Json::FastWriter styled_writer;
-
     Json::Value content_;
     content_["GUID"] = "B69392DF-209B-4102-819B-3C34D9969B86";
     content_["CompanyName"] = "";
@@ -63,8 +63,22 @@ void Test()
     LOG_MODULE_INFO("%s", keepalive.c_str());
 }
 
+void Test2()
+{
+    std::string strMessage(R"-({"id":12,"type":"pushTask","content":"{\"jxKhdwId\":451285,\"jxSqzhId\":3203,\"nsrsbh\":\"91500000747150540A\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"903\",\"sbyy\":\"\",\"createTime\":\"2017-06-30 22:08:15\",\"beginTime\":\"2017-07-02 14:59:37\",\"endTime\":\"2017-07-01 21:34:27\",\"param\":\"{\\\"nsrsbh\\\":\\\"91500000747150540A\\\",\\\"password\\\":\\\"88888888\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\",\\\"ymbb\\\":\\\"3.0.09\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"B69392DF-209B-4102-819B-3C34D9969B85\"}", "parameters":{}, "createTime" : 1498978807430, "request" : true, "async" : false})-");
+    std::stringstream ss(strMessage);
+    Json::Reader _reader;
+    Json::Value tsm;
+    _reader.parse(ss, tsm);
+    LOG_MODULE_INFO("%d", tsm["id"]);
+    LOG_MODULE_INFO("%s", tsm["type"]);
+    LOG_MODULE_INFO("%s", tsm["content"]);
+}
+
 int main(int argc,char** argv)
 {
+    Test2();
+
     bool done = false;
     std::string input;
     websocket_endpoint endpoint;

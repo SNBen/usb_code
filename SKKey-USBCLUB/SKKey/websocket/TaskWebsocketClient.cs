@@ -73,9 +73,7 @@ namespace SKKey.websocket
                 {
                     return;
                 }
-
-                taskServer = "ws://" + ConfigManager.Instance.Config.taskServerIP + ":" + ConfigManager.Instance.Config.taskServerPort + "/websocket";
-                taskServer = String.Format("ws://{0}:{1}/websocket",
+                taskServer = String.Format("ws://{0}:{1}/usbshare",
                                             ConfigManager.Instance.Config.taskServerIP,
                                             ConfigManager.Instance.Config.taskServerPort);
             }
@@ -114,8 +112,7 @@ namespace SKKey.websocket
             tsm.createTime  = DateTimeUtil.getSystemTimestampMilli();
 
             Login _login = new Login();
-
-            _login.GUID = "{B69392DF-209B-4102-819B-3C34D9969B85}";
+            _login.GUID = ConfigManager.Instance.Config.license;
             _login.CompanyName = "";
             _login.ACTION = "1";
             _login.TaxCodeList = new List<string>();

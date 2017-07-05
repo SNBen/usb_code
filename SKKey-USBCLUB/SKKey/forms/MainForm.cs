@@ -22,9 +22,23 @@ namespace SKKey.form
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            //TypeSelect form = new TypeSelect();
+            //DialogResult result = form.ShowDialog();
+            //if(result == DialogResult.OK)
+            //{
+            //    ConfigManager.Instance.Config.clientType = "USB";
+            //}else
+            //{
+            //    ConfigManager.Instance.Config.clientType = "PC";
+            //}
+
             TrayHelper trayHelper = new TrayHelper(this);
             WebOcxAccess.init(this.axCryptCtl1);
 
+            if(ConfigManager.Instance.Config.license == null)
+            {
+                ConfigManager.Instance.Config.license = Guid.NewGuid().ToString("B");
+            }
             String taskServerIP = ConfigManager.Instance.Config.taskServerIP;
 
             String taskServerPort = ConfigManager.Instance.Config.taskServerPort;
@@ -45,7 +59,11 @@ namespace SKKey.form
             {
                 baiwangRadioButton.Checked = true;
             }
-            TokenTask.tockenTaskRequestThreadInit();
+            if(taskServerIP != null && taskServerPort != null)
+            {
+                TokenTask.tockenTaskRequestThreadInit();
+            }
+            
         }
 
         private void changeShButton_Click(object sender, EventArgs e)
@@ -98,7 +116,7 @@ namespace SKKey.form
             Dictionary<string, string> map = new Dictionary<string, string>();
             map["taskServerIP"] = taskServerIP;
             map["taskServerPort"] = taskServerPort;
-
+            map["license"] = ConfigManager.Instance.Config.license;
             if (baiwangRadioButton.Checked)
             {
                 map["controlVersion"] = "baiwang";
@@ -128,7 +146,7 @@ namespace SKKey.form
             iResult = UsbclubOperator.OpenUSBPortByID(13, USBID);
             MessageBox.Show(String.Format("{0}", iResult));
 
-            String sh = SH_textBox.Text;
+            String sh = "";// SH_textBox.Text;
             String pwd = null;
             String portInfo = null;
 

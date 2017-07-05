@@ -64,7 +64,7 @@ namespace SKKey.task
                 {
                     return null;
                 }
-                tsm = doHandleEx(requestTaskSocketMessage);
+                tsm = doHandle(requestTaskSocketMessage);
             }
 
             return tsm;
@@ -135,7 +135,7 @@ namespace SKKey.task
             string clientAuthCode = WebOcxAccess.ClientAuth(serverPacket);
             try
             {
-                fpdkHttpResult = secondLogin(ym, ymbb, clientAuthCode, serverRandom, sh, 0);
+                    fpdkHttpResult = secondLogin(ym, ymbb, clientAuthCode, serverRandom, sh, 0);
             }
             catch (Exception e)
             {
@@ -253,63 +253,63 @@ namespace SKKey.task
             public string jxExchangeLicense { get; set; }
         }
 
-        public TaskSocketMessage doHandleEx(TaskSocketMessage request_tsm)
-        {
-            log.Info("doHandleEx: start" + request_tsm.content);
+        //public TaskSocketMessage doHandleEx(TaskSocketMessage request_tsm)
+        //{
+        //    log.Info("doHandleEx: start" + request_tsm.content);
 
-            puttask _puttask = JsonConvert.DeserializeObject<puttask>(request_tsm.content);
-            pt_param _param = JsonConvert.DeserializeObject<pt_param>(_puttask.param);
-            String sh = _param.nsrsbh;
-            String password = _param.password;
-            String portInfo = null;
-            int iUSBPort = 0;
+        //    puttask _puttask = JsonConvert.DeserializeObject<puttask>(request_tsm.content);
+        //    pt_param _param = JsonConvert.DeserializeObject<pt_param>(_puttask.param);
+        //    String sh = _param.nsrsbh;
+        //    String password = _param.password;
+        //    String portInfo = null;
+        //    int iUSBPort = 0;
 
-            if ("usb".Equals(ConfigManager.Instance.Config.clientType))
-            {
-                password = ConfigManager.Instance.Config.password;
-            }
-            else
-            {
-                XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort, ref portInfo, ref password);
-                log.Info("打开机柜..." + portInfo + iUSBPort);
-                int iResult = UsbclubOperator.OpenUSBPortByID(iUSBPort, portInfo);
-                if (0 != iResult)
-                {
-                    log.Error("打开设备失败：" + portInfo);
+        //    if ("usb".Equals(ConfigManager.Instance.Config.clientType))
+        //    {
+        //        password = ConfigManager.Instance.Config.password;
+        //    }
+        //    else
+        //    {
+        //        XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort, ref portInfo, ref password);
+        //        log.Info("打开机柜..." + portInfo + iUSBPort);
+        //        int iResult = UsbclubOperator.OpenUSBPortByID(iUSBPort, portInfo);
+        //        if (0 != iResult)
+        //        {
+        //            log.Error("打开设备失败：" + portInfo);
 
-                    TaskSocketMessage returnSocketMessage = new TaskSocketMessage();
-                    returnSocketMessage.type = TaskHandle.POST_TOKEN;
-                    //returnSocketMessage.parameters["rwid"] = request_tsm.parameters["rwid"];
+        //            TaskSocketMessage returnSocketMessage = new TaskSocketMessage();
+        //            returnSocketMessage.type = TaskHandle.POST_TOKEN;
+        //            //returnSocketMessage.parameters["rwid"] = request_tsm.parameters["rwid"];
 
-                    returnSocketMessage.parameters["code"] = CODE_USB_CLUB_ERROR;
-                    returnSocketMessage.parameters["msg"] = "打开机柜端口失败";
-                }
-                log.Info("打开机柜成功");
-            }
+        //            returnSocketMessage.parameters["code"] = CODE_USB_CLUB_ERROR;
+        //            returnSocketMessage.parameters["msg"] = "打开机柜端口失败";
+        //        }
+        //        log.Info("打开机柜成功");
+        //    }
 
-            TaskSocketMessage return_tsm = getTocken(_param.url, _param.ymbb, sh, password, _puttask.jxKhdwId);
-            if (portInfo != null)
-            {
-                bool bCompulsive = true;
-                UsbclubOperator.CloseUSBPortByID(iUSBPort,bCompulsive, ref portInfo);
-            }
-            log.Info("code ： " + return_tsm.parameters["code"]);
-            if (!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
-            {
-                _puttask.errno = return_tsm.parameters["code"];
-                _puttask.sbyy = return_tsm.parameters["msg"];
-            }
-            else
-            {
-                _puttask.errno = return_tsm.parameters["code"];
-                _puttask.result = "{" + String.Format(@" ""token"":""{0}"" ", return_tsm.parameters["token"]) + "}";
-            }
+        //    TaskSocketMessage return_tsm = getTocken(_param.url, _param.ymbb, sh, password, _puttask.jxKhdwId);
+        //    if (portInfo != null)
+        //    {
+        //        bool bCompulsive = true;
+        //        UsbclubOperator.CloseUSBPortByID(iUSBPort,bCompulsive, ref portInfo);
+        //    }
+        //    log.Info("code ： " + return_tsm.parameters["code"]);
+        //    if (!CODE_SUCCESS.Equals(return_tsm.parameters["code"]))
+        //    {
+        //        _puttask.errno = return_tsm.parameters["code"];
+        //        _puttask.sbyy = return_tsm.parameters["msg"];
+        //    }
+        //    else
+        //    {
+        //        _puttask.errno = return_tsm.parameters["code"];
+        //        _puttask.result = "{" + String.Format(@" ""token"":""{0}"" ", return_tsm.parameters["token"]) + "}";
+        //    }
 
-            request_tsm.content = JsonConvert.SerializeObject(_puttask);
-            request_tsm.type = "submitTaskResult";
-            log.Info("doHandleEx end:" + JsonConvert.SerializeObject(request_tsm));
-            return request_tsm;
-        }
+        //    request_tsm.content = JsonConvert.SerializeObject(_puttask);
+        //    request_tsm.type = "submitTaskResult";
+        //    log.Info("doHandleEx end:" + JsonConvert.SerializeObject(request_tsm));
+        //    return request_tsm;
+        //}
 
         public TaskSocketMessage doHandle(TaskSocketMessage request_tsm)
         {
@@ -328,7 +328,6 @@ namespace SKKey.task
             else
             {
                 ////////////////////////////////////////////////////////////////
-
                 // 0680220002389-12.0.0.0_13
                 XmlUtil.GetParamByTaxCode(sh, ref portInfo, ref password);
                 //XmlUtil.GetParamByTaxCodeEx(sh, ref iUSBPort,ref portInfo, ref password);

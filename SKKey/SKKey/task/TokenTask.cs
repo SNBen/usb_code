@@ -310,7 +310,7 @@ namespace SKKey.task
         //    log.Info("doHandleEx end:" + JsonConvert.SerializeObject(request_tsm));
         //    return request_tsm;
         //}
-
+        
         public TaskSocketMessage doHandle(TaskSocketMessage request_tsm)
         {
             log.Info("doHandle: start" + request_tsm.content);
@@ -520,6 +520,25 @@ namespace SKKey.task
             tsm.createTime = DateTimeUtil.getSystemTimestampMilli();
             TaskWebsocketClient.Instance.sendSyncRequest(tsm);
         }
+
+        public void InitDevice()
+        {
+            TaskSocketMessage tsm = new TaskSocketMessage();
+            tsm.type = "initDevice";
+            tsm.request = true;
+            tsm.createTime = DateTimeUtil.getSystemTimestampMilli();
+
+            Login _login = new Login();
+
+            _login.GUID = ConfigManager.Instance.Config.license;//"{B69392DF-209B-4102-819B-3C34D9969B85}";
+            _login.CompanyName = "";
+            _login.ACTION = "1";
+            _login.TaxCodeList = new List<string>();
+            _login.TaxCodeList.Add(ConfigManager.Instance.Config.sh);
+            tsm.content = JsonConvert.SerializeObject(_login);
+            TaskWebsocketClient.Instance.sendSyncRequest(tsm);
+        }
+
 
         private static void requestTockenTask()
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using SKKey.utils;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,8 +14,9 @@ namespace SKKey.websocket
 {
     class TaskWebsocketClient
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
+        private static readonly log4net.ILog log = 
+            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        
         private static TaskWebsocketClient instance;
 
         private WebSocket websocket;
@@ -23,14 +25,13 @@ namespace SKKey.websocket
 
         private bool connected;
 
-        private TaskWebsocketClient()
+        private  TaskWebsocketClient()
         {
-
         }
 
-        public static TaskWebsocketClient Instance
+        public static TaskWebsocketClient Instance 
         {
-            get
+            get 
             {
                 if (instance == null || !instance.connected)
                 {
@@ -64,15 +65,18 @@ namespace SKKey.websocket
         {
             connected = false;
             String taskServer = ConfigManager.Instance.Config.taskServer;
-            if (!"usb".Equals(ConfigManager.Instance.Config.clientType))
+            //if (!"usb".Equals(ConfigManager.Instance.Config.clientType))
             {
-                if (ConfigManager.Instance.Config.taskServerIP == null || ConfigManager.Instance.Config.taskServerIP == ""
-
-                   || ConfigManager.Instance.Config.taskServerPort == null || ConfigManager.Instance.Config.taskServerPort == "")
+                if (ConfigManager.Instance.Config.taskServerIP == null || 
+                    ConfigManager.Instance.Config.taskServerIP == "" ||
+                    ConfigManager.Instance.Config.taskServerPort == null || 
+                    ConfigManager.Instance.Config.taskServerPort == "")
                 {
                     return;
                 }
-                taskServer = "ws://" + ConfigManager.Instance.Config.taskServerIP + ":" + ConfigManager.Instance.Config.taskServerPort + "/websocket";
+                taskServer = String.Format("ws://{0}:{1}/usbshare",
+                                            ConfigManager.Instance.Config.taskServerIP,
+                                            ConfigManager.Instance.Config.taskServerPort);
             }
             log.Info("尝试连接taskServer：" + taskServer);
             websocket = new WebSocket(taskServer);
@@ -83,13 +87,29 @@ namespace SKKey.websocket
             websocket.Open();
         }
 
-        private void send(TaskSocketMessage taskSocketMessage)
+        private void send(TaskSocketMessage tsm)
         {
-            websocket.Send(JsonConvert.SerializeObject(taskSocketMessage));
+            websocket.Send(JsonConvert.SerializeObject(tsm));
         }
+
+
 
         private void websocket_Opened(object sender, EventArgs e)
         {
+            TaskSocketMessage tsm = new TaskSocketMessage();
+            tsm.type = "initDevice";
+            tsm.request = true;
+            tsm.createTime  = DateTimeUtil.getSystemTimestampMilli();
+
+            Login _login = new Login();
+
+            _login.GUID = ConfigManager.Instance.Config.license;//"{B69392DF-209B-4102-819B-3C34D9969B85}";
+            _login.CompanyName = "";
+            _login.ACTION = "1";
+            _login.TaxCodeList = new List<string>();
+            _login.TaxCodeList.Add(ConfigManager.Instance.Config.sh);
+            tsm.content = JsonConvert.SerializeObject(_login);
+            send(tsm);
             log.Info("taskserver 已打开");
             instance.connected = true;
         }
@@ -137,19 +157,17 @@ namespace SKKey.websocket
             try
             {
                 msg = JsonConvert.DeserializeObject<TaskSocketMessage>(e.Message);
+                log.Info("content：" + msg.content);
             }
-            catch (Exception exp)
+            catch (Exception exp) 
             {
-                log.Error("处理TaskSocketMessage 失败" + e.Message, exp);
+                log.Error("处理TaskSocketMessage 失败"+e.Message, exp);
             }
             if (msg == null)
             {
                 return;
             }
-            Thread thread = new Thread(delegate()
-            {
-                handleMessage(msg);
-            });
+            Thread thread = new Thread(delegate(){handleMessage(msg);});
             thread.Name = "MessageReceived:" + thread.GetHashCode();
             thread.Start();
         }
@@ -164,7 +182,7 @@ namespace SKKey.websocket
             //循环次数
             int cycleIndex = 0;
             //休眠毫秒数
-            int sleepTimeUnitMil = 5;
+            int sleepTimeUnitMil= 5;
             //休眠总时间
             int waitTime = 10 * 1000;
             while (reqReturnMap[msg.id] == null)

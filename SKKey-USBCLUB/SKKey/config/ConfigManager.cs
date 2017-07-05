@@ -54,6 +54,7 @@ namespace SKKey.config
 
         public void loadXML()
         {
+            Config.clientType = "usb-club";// XmlUtil.getNodeText(doc, "//client-type");
             string filepath = Path.Combine(FileUtil.getAppPath(), "config.xml");
             log.Info("load 配置文件 " + filepath);
             if (!File.Exists(filepath))
@@ -112,6 +113,10 @@ namespace SKKey.config
                 if (map.ContainsKey("license"))
                 {
                     Config.license = map["license"];
+                }
+                else
+                {
+                    //Config.license = 
                 }
 
                 if (map.ContainsKey("taskServerIP"))

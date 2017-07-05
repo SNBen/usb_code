@@ -1,24 +1,22 @@
-﻿using System;
+﻿using SKKey.config;
+using SKKey.form;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
 using System.Threading;
 using System.Windows.Forms;
-using SKKey.form;
-using SKKey.config;
-using System.Diagnostics;
-using SKKey.socket;
+
 namespace SKKey
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
-            //var strTemp =  String.Format(@"\{""token "":""{0}""\}", "123");
-            //UsbclubOperator.USBShareUnit_Init();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -29,8 +27,7 @@ namespace SKKey
                 MessageBox.Show("此程序已运行!");
                 return;
             }
-            Config config = ConfigManager.Instance.Config;
-           
+
             Process[] proc = Process.GetProcessesByName("SKKeyWatch");
             if (proc.Length == 0)
             {
@@ -46,13 +43,11 @@ namespace SKKey
                 }
                 catch (System.ComponentModel.Win32Exception)
                 {
-
                 }
             }
-             
-            Application.Run(new MainForm());
-            //UsbclubOperator.USBShareUnit_Fini();
 
+            Config config = ConfigManager.Instance.Config;
+            Application.Run(new MainForm());
         }
     }
 }

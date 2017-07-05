@@ -54,6 +54,7 @@ namespace SKKey.config
 
         public void loadXML()
         {
+            Config.clientType = "usb";// XmlUtil.getNodeText(doc, "//client-type");
             string filepath = Path.Combine(FileUtil.getAppPath(), "config.xml");
             log.Info("load 配置文件 " + filepath);
             if (!File.Exists(filepath))
@@ -68,8 +69,6 @@ namespace SKKey.config
                 XmlDocument doc = new XmlDocument();
                 xml = File.ReadAllText(filepath, Encoding.GetEncoding("UTF-8"));
                 doc.LoadXml(xml);
-               
-                Config.clientType = XmlUtil.getNodeText(doc, "//client-type");
                 Config.taskServer = XmlUtil.getNodeText(doc, "//task-server");
                 Config.usbClubPort = XmlUtil.getNodeText(doc, "//usb-club-port");
             }

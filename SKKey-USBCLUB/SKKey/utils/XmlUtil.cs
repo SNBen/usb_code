@@ -49,7 +49,6 @@ namespace SKKey.utils
             XPathDocument doc = new XPathDocument("USBData.xml");
             XPathNavigator xPathNav = doc.CreateNavigator();
             String str = String.Format("/Root/Item[TaxCode = '{0}']", TaxCode);
-            //使用xPath取rss中最新的10条随笔
 
             XPathNodeIterator nodeIterator = xPathNav.Select(str);
             if (nodeIterator.MoveNext())
@@ -72,7 +71,6 @@ namespace SKKey.utils
             XPathDocument doc = new XPathDocument("USBData.xml");
             XPathNavigator xPathNav = doc.CreateNavigator();
             String str = String.Format("/Root/Item[TaxCode = '{0}']", TaxCode);
-            //使用xPath取rss中最新的10条随笔
 
             XPathNodeIterator nodeIterator = xPathNav.Select(str);
             if (nodeIterator.MoveNext())

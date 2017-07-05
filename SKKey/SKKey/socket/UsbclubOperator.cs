@@ -19,18 +19,6 @@ namespace SKKey.socket
         private const int REMOTE_CONL_PORT = 8110;
         private const string STR_QZGBDK_JGM_A1 = "A1";
 
-        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Init", CharSet = CharSet.Auto)]
-        public static extern int USBShareUnit_Init();
-
-        [DllImport("USBShareUnit.dll", EntryPoint = "OpenUSBPortByID", CharSet = CharSet.Auto)]
-        public static extern int OpenUSBPortByID(int nUSBPort, String strIPAddrPort);
-
-        [DllImport("USBShareUnit.dll", EntryPoint = "CloseUSBPortByID", CharSet = CharSet.Auto)]
-        public static extern int CloseUSBPortByID(int nUSBPort, bool bCompulsive, ref String strIPAddrPort);
-
-        [DllImport("USBShareUnit.dll", EntryPoint = "USBShareUnit_Fini", CharSet = CharSet.Auto)]
-        public static extern int USBShareUnit_Fini();
-
         /**
          * 根据机柜管理器，发送的端口信息字符串，打开端口
          * 068020002389_127.0.0.1_8

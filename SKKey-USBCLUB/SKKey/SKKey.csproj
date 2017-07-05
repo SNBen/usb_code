@@ -92,6 +92,12 @@
     <Compile Include="socket\UsbclubOperator.cs" />
     <Compile Include="task\TaskHandle.cs" />
     <Compile Include="task\TokenTask.cs" />
+    <Compile Include="forms\TypeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TypeSelect.Designer.cs">
+      <DependentUpon>TypeSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="utils\DateTimeUtil.cs" />
     <Compile Include="utils\FileUtil.cs" />
     <Compile Include="utils\XmlUtil.cs" />
@@ -110,6 +116,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="forms\TypeSelect.resx">
+      <DependentUpon>TypeSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKKey", "SKKey\SKKey.csproj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WebSocket", "WebSocket\WebSocket.vcxproj", "{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SKkey-C", "SKkey-C\SKkey-C.vcxproj", "{FD1A7518-9070-4026-BD76-111F6B08421D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -29,6 +31,14 @@ Global
 		{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}.Release|x64.Build.0 = Release|x64
 		{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}.Release|x86.ActiveCfg = Release|Win32
 		{E25AA0AA-EB40-40A1-B148-ED0569E7F39D}.Release|x86.Build.0 = Release|Win32
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Debug|x64.ActiveCfg = Debug|x64
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Debug|x64.Build.0 = Debug|x64
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Debug|x86.Build.0 = Debug|Win32
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Release|x64.ActiveCfg = Release|x64
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Release|x64.Build.0 = Release|x64
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Release|x86.ActiveCfg = Release|Win32
+		{FD1A7518-9070-4026-BD76-111F6B08421D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

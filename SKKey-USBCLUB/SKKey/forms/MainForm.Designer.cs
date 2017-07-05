@@ -46,18 +46,12 @@ namespace SKKey.form
             this.submitButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.axCryptCtl1 = new AxCryp_Ctl.AxCryptCtl();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SH_textBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axCryptCtl1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.SH_textBox);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.hangxinRadioButton);
             this.groupBox1.Controls.Add(this.baiwangRadioButton);
@@ -82,6 +76,7 @@ namespace SKKey.form
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 22;
             this.label3.Text = "控件版本";
+            this.label3.Visible = false;
             // 
             // hangxinRadioButton
             // 
@@ -93,6 +88,7 @@ namespace SKKey.form
             this.hangxinRadioButton.TabStop = true;
             this.hangxinRadioButton.Text = "航信版";
             this.hangxinRadioButton.UseVisualStyleBackColor = true;
+            this.hangxinRadioButton.Visible = false;
             // 
             // baiwangRadioButton
             // 
@@ -104,6 +100,7 @@ namespace SKKey.form
             this.baiwangRadioButton.TabStop = true;
             this.baiwangRadioButton.Text = "百望版";
             this.baiwangRadioButton.UseVisualStyleBackColor = true;
+            this.baiwangRadioButton.Visible = false;
             this.baiwangRadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // taskServerPortBox
@@ -140,7 +137,7 @@ namespace SKKey.form
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(153, 256);
+            this.submitButton.Location = new System.Drawing.Point(51, 256);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(75, 21);
             this.submitButton.TabIndex = 15;
@@ -150,7 +147,7 @@ namespace SKKey.form
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(343, 256);
+            this.exitButton.Location = new System.Drawing.Point(170, 256);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 21);
             this.exitButton.TabIndex = 14;
@@ -167,33 +164,6 @@ namespace SKKey.form
             this.axCryptCtl1.Size = new System.Drawing.Size(33, 29);
             this.axCryptCtl1.TabIndex = 0;
             this.axCryptCtl1.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(284, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "GetToken";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.BTNTest_Click);
-            // 
-            // SH_textBox
-            // 
-            this.SH_textBox.Location = new System.Drawing.Point(166, 28);
-            this.SH_textBox.Name = "SH_textBox";
-            this.SH_textBox.Size = new System.Drawing.Size(100, 21);
-            this.SH_textBox.TabIndex = 24;
-            this.SH_textBox.Text = "91500000747150540A";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "请输入税号";
             // 
             // MainForm
             // 
@@ -230,9 +200,6 @@ namespace SKKey.form
         private RadioButton baiwangRadioButton;
         private RadioButton hangxinRadioButton;
         private Label label3;
-        private Button button1;
-        private TextBox SH_textBox;
-        private Label label4;
     }
 }
 
