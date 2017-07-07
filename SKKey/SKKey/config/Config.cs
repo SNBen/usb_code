@@ -27,5 +27,9 @@ namespace SKKey.config
         public bool errorLicense { get; set; }
 
         public string controlVersion { get; set; }
+		
+		public string PT_PWD { get; set; }
+		
+		
     }
 }

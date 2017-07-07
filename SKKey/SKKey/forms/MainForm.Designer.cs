@@ -37,6 +37,10 @@ namespace SKKey.form
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.changeShButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.taskServerPortBox = new System.Windows.Forms.TextBox();
+            this.taskServerIPBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.passwordBox2 = new System.Windows.Forms.TextBox();
             this.授权码 = new System.Windows.Forms.Label();
@@ -47,19 +51,19 @@ namespace SKKey.form
             this.shBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.axCryptCtl1 = new AxCryp_Ctl.AxCryptCtl();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.taskServerIPBox = new System.Windows.Forms.TextBox();
-            this.taskServerPortBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.PT_PWD_textBox = new System.Windows.Forms.TextBox();
+            this.PT_PWD_textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axCryptCtl1)).BeginInit();
             this.SuspendLayout();
             // 
             // changeShButton
             // 
-            this.changeShButton.Location = new System.Drawing.Point(113, 354);
+            this.changeShButton.Location = new System.Drawing.Point(113, 431);
             this.changeShButton.Name = "changeShButton";
-            this.changeShButton.Size = new System.Drawing.Size(75, 21);
+            this.changeShButton.Size = new System.Drawing.Size(75, 25);
             this.changeShButton.TabIndex = 1;
             this.changeShButton.Text = "确认";
             this.changeShButton.UseVisualStyleBackColor = true;
@@ -67,6 +71,10 @@ namespace SKKey.form
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.PT_PWD_textBox2);
+            this.groupBox1.Controls.Add(this.PT_PWD_textBox);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.taskServerPortBox);
             this.groupBox1.Controls.Add(this.taskServerIPBox);
             this.groupBox1.Controls.Add(this.label4);
@@ -83,16 +91,48 @@ namespace SKKey.form
             this.groupBox1.Controls.Add(this.changeShButton);
             this.groupBox1.Location = new System.Drawing.Point(3, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(487, 470);
+            this.groupBox1.Size = new System.Drawing.Size(487, 502);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "非机柜版";
             // 
+            // taskServerPortBox
+            // 
+            this.taskServerPortBox.Location = new System.Drawing.Point(113, 364);
+            this.taskServerPortBox.Name = "taskServerPortBox";
+            this.taskServerPortBox.Size = new System.Drawing.Size(348, 21);
+            this.taskServerPortBox.TabIndex = 18;
+            // 
+            // taskServerIPBox
+            // 
+            this.taskServerIPBox.Location = new System.Drawing.Point(113, 311);
+            this.taskServerIPBox.Name = "taskServerIPBox";
+            this.taskServerIPBox.Size = new System.Drawing.Size(348, 21);
+            this.taskServerIPBox.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(24, 364);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 12);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "任务服务器端口";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 311);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "任务服务器IP";
+            // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(303, 354);
+            this.exitButton.Location = new System.Drawing.Point(303, 431);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 21);
+            this.exitButton.Size = new System.Drawing.Size(75, 25);
             this.exitButton.TabIndex = 14;
             this.exitButton.Text = "安全退出";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -177,43 +217,43 @@ namespace SKKey.form
             this.axCryptCtl1.TabIndex = 0;
             this.axCryptCtl1.Visible = false;
             // 
-            // label1
+            // label6
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 234);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "任务服务器IP";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(34, 223);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "平台密码";
             // 
-            // label4
+            // label7
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 287);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 12);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "任务服务器端口";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(34, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 12);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "确认平台密码";
             // 
-            // taskServerIPBox
+            // PT_PWD_textBox
             // 
-            this.taskServerIPBox.Location = new System.Drawing.Point(113, 234);
-            this.taskServerIPBox.Name = "taskServerIPBox";
-            this.taskServerIPBox.Size = new System.Drawing.Size(348, 21);
-            this.taskServerIPBox.TabIndex = 17;
+            this.PT_PWD_textBox.Location = new System.Drawing.Point(113, 223);
+            this.PT_PWD_textBox.Name = "PT_PWD_textBox";
+            this.PT_PWD_textBox.Size = new System.Drawing.Size(348, 21);
+            this.PT_PWD_textBox.TabIndex = 21;
             // 
-            // taskServerPortBox
+            // PT_PWD_textBox2
             // 
-            this.taskServerPortBox.Location = new System.Drawing.Point(113, 287);
-            this.taskServerPortBox.Name = "taskServerPortBox";
-            this.taskServerPortBox.Size = new System.Drawing.Size(348, 21);
-            this.taskServerPortBox.TabIndex = 18;
+            this.PT_PWD_textBox2.Location = new System.Drawing.Point(113, 256);
+            this.PT_PWD_textBox2.Name = "PT_PWD_textBox2";
+            this.PT_PWD_textBox2.Size = new System.Drawing.Size(348, 21);
+            this.PT_PWD_textBox2.TabIndex = 22;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 494);
+            this.ClientSize = new System.Drawing.Size(500, 526);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.axCryptCtl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -249,6 +289,10 @@ namespace SKKey.form
         private TextBox taskServerIPBox;
         private Label label4;
         private Label label1;
+        private Label label7;
+        private Label label6;
+        private TextBox PT_PWD_textBox2;
+        private TextBox PT_PWD_textBox;
     }
 }
 

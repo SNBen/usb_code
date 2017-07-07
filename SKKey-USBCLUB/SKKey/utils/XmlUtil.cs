@@ -44,7 +44,7 @@ namespace SKKey.utils
             return parentNode[childNodeName].InnerText;
         }
 
-        public static bool GetParamByTaxCode(String TaxCode, ref String USBID, ref String PWD)
+        public static bool GetParamByTaxCode(String TaxCode, ref String USBID, ref String PWD,ref String PT_PWD)
         {
             XPathDocument doc = new XPathDocument("USBData.xml");
             XPathNavigator xPathNav = doc.CreateNavigator();
@@ -56,6 +56,7 @@ namespace SKKey.utils
                 XPathNavigator itemNav = nodeIterator.Current;
                 USBID = String.Format("{0}_127.0.0.1_{1}", itemNav.SelectSingleNode("USBID").Value, itemNav.SelectSingleNode("USBPort").Value);
                 PWD = itemNav.SelectSingleNode("PWD").Value;
+                PT_PWD = itemNav.SelectSingleNode("PT_PWD").Value;
                 Console.WriteLine("{0} = {1}", USBID, PWD);
                 return true;
             }

@@ -41,7 +41,7 @@ namespace SKKey.socket
                     cmdStr += HexUtil.int2Hex4BytesStr(int.Parse(port));
                     log.Info("打开端口信息：" + portxx + "-cmdStr:" + cmdStr);
                     Dictionary<string, string> appMap = appRightByUsbPort(ip, REMOTE_CONL_PORT, cmdStr);
-                    if (STR_SQDKHSYQ_JGM_A0.Equals(appMap["jgm"]))//成功 
+                    if (STR_SQDKHSYQ_JGM_A0.Equals(appMap["jgm"]))//成功
                     {
                         //runLocalExe(USBCLUB_EXE_PATH, ip, appMap["sxms"]);
                         System.Threading.Thread.Sleep(2000);
@@ -59,7 +59,6 @@ namespace SKKey.socket
                     resultMap.Add("result", "-1");
                     resultMap.Add("msg", "打开端口异常");
                 }
-
             }
             else
             {
@@ -90,7 +89,7 @@ namespace SKKey.socket
                     cmdStr += HexUtil.int2Hex4BytesStr(int.Parse(port));
                     log.Info("关闭端口信息：" + portxx + "-cmdStr:" + cmdStr);
                     Dictionary<string, string> appMap = closeUsbPort(ip, REMOTE_CONL_PORT, cmdStr);
-                    if (STR_QZGBDK_JGM_A1.Equals(appMap["jgm"]))//成功 
+                    if (STR_QZGBDK_JGM_A1.Equals(appMap["jgm"]))//成功
                     {
                         resultMap.Add("result", "0");
                         resultMap.Add("msg", "关闭端口成功");
@@ -106,7 +105,6 @@ namespace SKKey.socket
                     resultMap.Add("result", "-1");
                     resultMap.Add("msg", "关闭端口异常");
                 }
-
             }
             else
             {
@@ -204,7 +202,6 @@ namespace SKKey.socket
                     {
                         //添加结果码
                         resultMap.Add("jgm", hexStr);
-
                     }
                     else
                     {
@@ -233,14 +230,14 @@ namespace SKKey.socket
         {
             string msg = "";
             Process p = new Process();
-            p.StartInfo.FileName = exePath + "usbclub.exe";             //设定需要执行的命令 
-            p.StartInfo.UseShellExecute = false;          //不使用系统shell外壳程序启动  
-            p.StartInfo.RedirectStandardInput = true;     //重定向输入（一定是true） 
-            p.StartInfo.RedirectStandardOutput = true;    //重定向输出  
+            p.StartInfo.FileName = exePath + "usbclub.exe";             //设定需要执行的命令
+            p.StartInfo.UseShellExecute = false;          //不使用系统shell外壳程序启动
+            p.StartInfo.RedirectStandardInput = true;     //重定向输入（一定是true）
+            p.StartInfo.RedirectStandardOutput = true;    //重定向输出
             p.StartInfo.RedirectStandardError = true;
             string param = " -a " + ip + " 3240 " + sxms + " " + sxms;
             p.StartInfo.Arguments = param;
-            p.StartInfo.CreateNoWindow = true;            //不创建窗口 
+            p.StartInfo.CreateNoWindow = true;            //不创建窗口
             try
             {
                 if (p.Start())
@@ -250,19 +247,18 @@ namespace SKKey.socket
                 }
                 else
                     msg = "DOS线程创建失败";
-
             }
             catch (Exception ex)
             {
                 msg = ex.Message;
             }
             //return msg;
-
         }
 
         /**
          * diction数据结构转换为key-value，字符串
          */
+
         private static string dic2str(Dictionary<string, string> dic)
         {
             string str = "";

@@ -137,33 +137,5 @@ namespace SKKey.form
         {
         }
 
-        private void BTNTest_Click(object sender, EventArgs e)
-        {
-            int iResult = UsbclubOperator.USBShareUnit_Init();
-            MessageBox.Show(String.Format("{0}", iResult));
-
-            String USBID = "192.168.8.251:10001:3240";
-            iResult = UsbclubOperator.OpenUSBPortByID(13, USBID);
-            MessageBox.Show(String.Format("{0}", iResult));
-
-            String sh = "";// SH_textBox.Text;
-            String pwd = null;
-            String portInfo = null;
-
-            XmlUtil.GetParamByTaxCode(sh, ref portInfo, ref pwd);
-            var openInfo = UsbclubOperator.openPort(portInfo);
-            if (!"0".Equals(openInfo["result"]))
-            {
-                log.Error("打开设备失败：" + openInfo);
-            }
-
-            var tsM = new TokenTask().getTocken("https://fpdk.cqsw.gov.cn/", "3.0.09", sh, pwd, "1");
-
-            if (portInfo != null)
-            {
-                UsbclubOperator.closePort(portInfo);
-            }
-            MessageBox.Show(tsM.parameters["msg"]);
-        }
     }
 }

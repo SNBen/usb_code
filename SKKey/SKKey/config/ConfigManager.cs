@@ -104,6 +104,12 @@ namespace SKKey.config
                 {
                     Config.sh = map["sh"];
                 }
+
+                if (map.ContainsKey("PT_PWD"))
+                {
+                    Config.password = map["PT_PWD"];
+                }
+
                 if (map.ContainsKey("password"))
                 {
                     Config.password = map["password"];

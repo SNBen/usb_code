@@ -32,6 +32,7 @@ namespace SKKey.form
             String sh = ConfigManager.Instance.Config.sh;
             String password = ConfigManager.Instance.Config.password;
             String license = ConfigManager.Instance.Config.license;
+            String PT_PWD = ConfigManager.Instance.Config.PT_PWD;
 
             if (sh != null)
             {
@@ -44,6 +45,13 @@ namespace SKKey.form
                 passwordBox.Text = password;
                 passwordBox2.Text = password;
             }
+
+            if (PT_PWD != null)
+            {
+                PT_PWD_textBox.Text = PT_PWD;
+                PT_PWD_textBox2.Text = PT_PWD;
+            }
+
 
             if (ConfigManager.Instance.Config.taskServerIP != null)
             {
@@ -70,10 +78,12 @@ namespace SKKey.form
             String sh = shBox.Text;
 
             String password = passwordBox.Text;
-
             String password2 = passwordBox2.Text;
             String StrIP = taskServerIPBox.Text;
             String StrPort = taskServerPortBox.Text;
+
+            String PT_PWD   = PT_PWD_textBox.Text;
+            String PT_PWD2  = PT_PWD_textBox2.Text;
 
             if (StrIP == null || StrIP.Trim().Length == 0)
             {
@@ -99,7 +109,13 @@ namespace SKKey.form
                 return;
             }
 
-            if (!password.Equals(password2))
+            if (PT_PWD == null || PT_PWD.Trim().Length == 0)
+            {
+                MessageBox.Show("平台密码不能为空！");
+                return;
+            }
+
+            if (!PT_PWD.Equals(PT_PWD2))
             {
                 MessageBox.Show("两次密码输入不一致！");
                 return;
@@ -110,6 +126,7 @@ namespace SKKey.form
             map["license"] = ConfigManager.Instance.Config.license;
             map["sh"] = sh;
             map["password"] = password;
+            map["PT_PWD"] = PT_PWD;
             map["taskServerIP"] = StrIP;
             map["taskServerPort"] = StrPort;
 
