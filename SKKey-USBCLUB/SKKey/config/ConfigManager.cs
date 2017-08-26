@@ -114,10 +114,6 @@ namespace SKKey.config
                 {
                     Config.license = map["license"];
                 }
-                else
-                {
-                    //Config.license = 
-                }
 
                 if (map.ContainsKey("taskServerIP"))
                 {

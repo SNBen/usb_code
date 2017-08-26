@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKKey", "SKKey\SKKey.csproj", "{3D282198-C09E-44C9-80DE-4AC888F0FAD2}"
-EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SKKey.Setup", "SKKey.Setup\SKKey.Setup.wixproj", "{B50B63D8-7194-4AF5-9C73-2A03B572FCB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +19,6 @@ Global
 		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Release|x64.ActiveCfg = Release|x86
 		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Release|x86.ActiveCfg = Release|x86
 		{3D282198-C09E-44C9-80DE-4AC888F0FAD2}.Release|x86.Build.0 = Release|x86
-		{B50B63D8-7194-4AF5-9C73-2A03B572FCB1}.Debug|x64.ActiveCfg = Debug|x86
-		{B50B63D8-7194-4AF5-9C73-2A03B572FCB1}.Debug|x86.ActiveCfg = Debug|x86
-		{B50B63D8-7194-4AF5-9C73-2A03B572FCB1}.Debug|x86.Build.0 = Debug|x86
-		{B50B63D8-7194-4AF5-9C73-2A03B572FCB1}.Release|x64.ActiveCfg = Release|x86
-		{B50B63D8-7194-4AF5-9C73-2A03B572FCB1}.Release|x86.ActiveCfg = Release|x86
-		{B50B63D8-7194-4AF5-9C73-2A03B572FCB1}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

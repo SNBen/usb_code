@@ -8,12 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
+using System.Reflection;
+
+using log4net;
 
 namespace SKKey.form
 {
     public partial class MainForm : Form
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
         public MainForm()
         {
@@ -74,13 +77,13 @@ namespace SKKey.form
         private void exitButton_Click(object sender, EventArgs e)
         {
             onClose();
-
             System.Environment.Exit(0);
         }
 
         public void onClose()
         {
             Process[] procs = Process.GetProcessesByName("SKKeyWatch");
+
             foreach (Process proc in procs)
             {
                 try

@@ -44,7 +44,11 @@ namespace SKKey.utils
             return parentNode[childNodeName].InnerText;
         }
 
-        public static bool GetParamByTaxCode(String TaxCode, ref String USBID, ref String PWD,ref String PT_PWD)
+        public static bool GetParamByTaxCode(
+            String TaxCode, 
+            ref String USBID, 
+            ref String PWD,
+            ref String PT_PWD)
         {
             XPathDocument doc = new XPathDocument("USBData.xml");
             XPathNavigator xPathNav = doc.CreateNavigator();

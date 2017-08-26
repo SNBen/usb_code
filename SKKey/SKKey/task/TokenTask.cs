@@ -463,7 +463,7 @@ namespace SKKey.task
             String password = _param.password;//= _puttask.param["password"];
             String PT_PWD = "";
             String portInfo = "";
-            int iUSBPort = 0;
+            //int iUSBPort = 0;
 
             if ("usb".Equals(ConfigManager.Instance.Config.clientType))
             {
@@ -493,7 +493,7 @@ namespace SKKey.task
                 }
                 log.Info("打开机柜成功");
             }
-
+            log.Info("PT_PW T" + PT_PWD);
             TaskSocketMessage return_tsm = getTocken(_param.url, _param.ymbb, sh, password, _puttask.jxKhdwId, PT_PWD);
             if (portInfo != null)
             {

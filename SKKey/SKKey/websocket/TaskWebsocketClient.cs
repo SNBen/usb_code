@@ -1,21 +1,22 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using SKKey.config;
+using SKKey.task;
 using SKKey.utils;
+using SuperSocket.ClientEngine;
 using System.Collections.Generic;
 using System.Text;
-
-using WebSocket4Net;
-using SKKey.config;
-
 using System.Threading;
-using SuperSocket.ClientEngine;
-using Newtonsoft.Json;
-using SKKey.task;
+using System.Xml.XPath;
+using System;
+using WebSocket4Net;
+using log4net;
+
 namespace SKKey.websocket
 {
     class TaskWebsocketClient
     {
-        private static readonly log4net.ILog log = 
-            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog log = 
+            LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         
         private static TaskWebsocketClient instance;
 
@@ -102,8 +103,7 @@ namespace SKKey.websocket
             tsm.createTime  = DateTimeUtil.getSystemTimestampMilli();
 
             Login _login = new Login();
-
-            _login.GUID = ConfigManager.Instance.Config.license;//"{B69392DF-209B-4102-819B-3C34D9969B85}";
+            _login.GUID = ConfigManager.Instance.Config.license;
             _login.CompanyName = "";
             _login.ACTION = "1";
             _login.TaxCodeList = new List<string>();

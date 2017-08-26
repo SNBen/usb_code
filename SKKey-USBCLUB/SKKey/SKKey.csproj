@@ -101,6 +101,7 @@
     <Compile Include="utils\DateTimeUtil.cs" />
     <Compile Include="utils\FileUtil.cs" />
     <Compile Include="utils\XmlUtil.cs" />
+    <Compile Include="websocket\Login.cs" />
     <Compile Include="websocket\TaskSocketMessage.cs" />
     <Compile Include="websocket\TaskWebsocketClient.cs" />
     <EmbeddedResource Include="forms\MainForm.resx">

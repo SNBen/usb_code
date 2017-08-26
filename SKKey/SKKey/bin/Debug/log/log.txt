@@ -1,8 +1,174 @@
-2017-07-05 21:41:02,957 [1] INFO  SKKey.config.ConfigManager [57] - load 配置文件 D:\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
-2017-07-05 21:41:02,974 [1] INFO  SKKey.config.ConfigManager [80] - 配置载入成功
-2017-07-05 21:41:02,977 [1] INFO  SKKey.config.ConfigManager [86] - load 配置文件 D:\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
-2017-07-05 21:41:02,977 [1] INFO  SKKey.config.ConfigManager [89] - 配置文件不存在
-2017-07-05 21:41:03,086 [tokenThread] ERROR SKKey.task.TokenTask [325] - 没有配置税号、密码、授权码
-2017-07-05 21:41:04,087 [tokenThread] ERROR SKKey.task.TokenTask [325] - 没有配置税号、密码、授权码
-2017-07-05 21:41:05,088 [tokenThread] ERROR SKKey.task.TokenTask [325] - 没有配置税号、密码、授权码
-2017-07-05 21:41:06,089 [tokenThread] ERROR SKKey.task.TokenTask [325] - 没有配置税号、密码、授权码
+2017-08-26 07:38:20,467 [1] INFO  SKKey.config.ConfigManager [59] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-08-26 07:38:20,500 [1] INFO  SKKey.config.ConfigManager [85] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-08-26 07:38:20,500 [1] INFO  SKKey.config.ConfigManager [88] - 配置文件不存在
+2017-08-26 07:40:20,959 [1] INFO  SKKey.config.ConfigManager [59] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-08-26 07:40:20,961 [1] INFO  SKKey.config.ConfigManager [85] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-08-26 07:41:06,862 [1] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:08,124 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:08,126 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:08,129 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:08,129 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:08,130 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:09,249 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:09,250 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:09,250 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:09,251 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:09,251 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:10,367 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:10,367 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:10,367 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:10,371 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:10,383 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:11,503 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:11,503 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:11,503 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:11,503 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:11,503 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:12,635 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:12,635 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:12,635 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:12,635 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:12,635 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:12,699 [1] INFO  SKKey.websocket.TaskWebsocketClient [57] - taskserver connect 失败
+2017-08-26 07:41:12,699 [1] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-08-26 07:41:14,670 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:15,043 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:15,043 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:15,043 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:15,043 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:15,048 [1] INFO  SKKey.websocket.TaskWebsocketClient [177] - request:{"id":1503704440919,"type":"initDevice","content":"{\"GUID\":\"{2a3f000c-6afd-4564-9cde-079b4908e860}\",\"CompanyName\":\"\",\"ACTION\":\"1\",\"TaxCodeList\":[\"110102681953105\"],\"TIME\":null}","parameters":{},"createTime":1503704445965,"request":true,"async":false}
+2017-08-26 07:41:16,604 [1] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:16,604 [1] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:16,604 [1] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:28,228 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:28,640 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:28,640 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:28,808 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:28,812 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:35,599 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:35,599 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:35,599 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:35,602 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:35,602 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:36,718 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:36,718 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:36,718 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:36,718 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:36,718 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:37,838 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:37,838 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:37,839 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:37,839 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:37,839 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:38,956 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:38,956 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:38,956 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:38,956 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:38,956 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:40,076 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:40,076 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:40,076 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:40,076 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:40,080 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:41,196 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:41,196 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:41,196 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:41,196 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:41,196 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:42,328 [3] ERROR SKKey.websocket.TaskWebsocketClient [119] - websocket_Error:
+2017-08-26 07:41:42,328 [3] ERROR SKKey.websocket.TaskWebsocketClient [120] - WebSocket4Net.WebSocket
+2017-08-26 07:41:42,328 [3] ERROR SKKey.websocket.TaskWebsocketClient [121] - SuperSocket.ClientEngine.ErrorEventArgs
+2017-08-26 07:41:42,328 [3] ERROR SKKey.websocket.TaskWebsocketClient [126] - taskserver 断开
+2017-08-26 07:41:42,328 [3] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 07:41:49,865 [1] INFO  SKKey.websocket.TaskWebsocketClient [202] - response:null
+2017-08-26 08:09:22,078 [1] INFO  SKKey.config.ConfigManager [59] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-08-26 08:09:22,106 [1] INFO  SKKey.config.ConfigManager [85] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-08-26 08:10:48,303 [1] INFO  SKKey.config.ConfigManager [59] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-08-26 08:10:48,331 [1] INFO  SKKey.config.ConfigManager [85] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-08-26 08:11:38,064 [1] INFO  SKKey.config.ConfigManager [59] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-08-26 08:11:40,554 [1] INFO  SKKey.config.ConfigManager [85] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-08-26 08:16:20,232 [1] INFO  SKKey.config.ConfigManager [59] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-08-26 08:16:22,888 [1] INFO  SKKey.config.ConfigManager [85] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-08-26 08:16:24,094 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 08:16:26,810 [7] INFO  SKKey.websocket.TaskWebsocketClient [113] - taskserver 已打开
+2017-08-26 08:16:26,822 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-08-26 08:16:26,822 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [177] - request:{"id":1503706584087,"type":"keepalive","content":null,"parameters":{},"createTime":1503706584086,"request":true,"async":false}
+2017-08-26 08:16:27,758 [7] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":1503706584087,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706584086,"request":false,"async":false}
+2017-08-26 08:16:27,774 [7] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{}
+2017-08-26 08:16:27,802 [8] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":1503706584088,"type":"initDevice","content":"{}","parameters":{},"createTime":1503706586730,"request":false,"async":false}
+2017-08-26 08:16:27,802 [8] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{}
+2017-08-26 08:16:27,802 [MessageReceived:9] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：9
+2017-08-26 08:16:27,842 [MessageReceived:10] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：10
+2017-08-26 08:16:27,842 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [202] - response:{"id":1503706584087,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706584086,"request":false,"async":false}
+2017-08-26 08:16:41,523 [8] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":2,"type":"pushTask","content":"{\"jxKhdwId\":460151,\"jxSqzhId\":80,\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"\",\"sbyy\":\"\",\"createTime\":\"2017-07-27 19:49:26\",\"endTime\":\"\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706546820,"request":true,"async":false}
+2017-08-26 08:16:41,523 [8] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:16:41,555 [MessageReceived:11] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：11
+2017-08-26 08:16:41,555 [MessageReceived:11] INFO  SKKey.task.TokenTask [46] - 执行取token任务
+2017-08-26 08:16:41,555 [MessageReceived:11] INFO  SKKey.task.TokenTask [459] - doHandle: start{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:16:41,563 [MessageReceived:11] INFO  SKKey.task.TokenTask [496] - PT_PW T88888888
+2017-08-26 08:16:41,563 [MessageReceived:11] INFO  SKKey.task.TokenTask [81] - ym:https://fpdk.bjsat.gov.cn;ymbb:3.0.10
+2017-08-26 08:16:41,567 [MessageReceived:11] INFO  SKKey.ocx.WebOcxAccess [40] - 打开设备
+2017-08-26 08:17:11,675 [8] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":3,"type":"pushTask","content":"{\"jxKhdwId\":460151,\"jxSqzhId\":80,\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"\",\"sbyy\":\"\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:15:46\",\"endTime\":\"\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706576928,"request":true,"async":false}
+2017-08-26 08:17:11,675 [8] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:15:46","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:17:11,711 [MessageReceived:12] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：12
+2017-08-26 08:17:11,711 [MessageReceived:12] INFO  SKKey.task.TokenTask [46] - 执行取token任务
+2017-08-26 08:17:27,844 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [177] - request:{"id":1503706584094,"type":"keepalive","content":null,"parameters":{},"createTime":1503706647845,"request":true,"async":false}
+2017-08-26 08:17:28,160 [8] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":1503706584094,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706647845,"request":false,"async":false}
+2017-08-26 08:17:28,160 [8] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{}
+2017-08-26 08:17:28,168 [MessageReceived:13] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：13
+2017-08-26 08:17:28,172 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [202] - response:{"id":1503706584094,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706647845,"request":false,"async":false}
+2017-08-26 08:17:41,703 [8] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":5,"type":"pushTask","content":"{\"jxKhdwId\":460151,\"jxSqzhId\":80,\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"\",\"sbyy\":\"\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:16:16\",\"endTime\":\"\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706606993,"request":true,"async":false}
+2017-08-26 08:17:41,703 [8] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:16:16","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:17:41,727 [MessageReceived:14] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：14
+2017-08-26 08:17:41,731 [MessageReceived:14] INFO  SKKey.task.TokenTask [46] - 执行取token任务
+2017-08-26 08:18:11,884 [8] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":6,"type":"pushTask","content":"{\"jxKhdwId\":460151,\"jxSqzhId\":80,\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"\",\"sbyy\":\"\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:16:46\",\"endTime\":\"\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706637066,"request":true,"async":false}
+2017-08-26 08:18:11,884 [8] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:16:46","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:18:11,904 [MessageReceived:13] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：13
+2017-08-26 08:18:11,904 [MessageReceived:13] INFO  SKKey.task.TokenTask [46] - 执行取token任务
+2017-08-26 08:18:28,173 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [177] - request:{"id":1503706584098,"type":"keepalive","content":null,"parameters":{},"createTime":1503706708174,"request":true,"async":false}
+2017-08-26 08:18:28,369 [8] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":1503706584098,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706708174,"request":false,"async":false}
+2017-08-26 08:18:28,373 [8] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{}
+2017-08-26 08:18:28,385 [MessageReceived:10] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：10
+2017-08-26 08:18:28,393 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [202] - response:{"id":1503706584098,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706708174,"request":false,"async":false}
+2017-08-26 08:18:35,805 [1] INFO  SKKey.config.ConfigManager [59] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.xml
+2017-08-26 08:18:42,023 [1] INFO  SKKey.config.ConfigManager [85] - load 配置文件 D:\easy\Work.old\usb_code\SKKey\SKKey\bin\Debug\config.json
+2017-08-26 08:20:19,156 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [82] - 尝试连接taskServer：ws://server.ngrok.cc:7088/usbshare
+2017-08-26 08:20:20,194 [3] INFO  SKKey.websocket.TaskWebsocketClient [113] - taskserver 已打开
+2017-08-26 08:20:20,197 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [61] - taskserver connected
+2017-08-26 08:20:21,513 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [177] - request:{"id":1503706817177,"type":"keepalive","content":null,"parameters":{},"createTime":1503706818643,"request":true,"async":false}
+2017-08-26 08:20:26,562 [3] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":1503706817178,"type":"initDevice","content":"{}","parameters":{},"createTime":1503706820111,"request":false,"async":false}
+2017-08-26 08:20:34,761 [3] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{}
+2017-08-26 08:20:34,781 [3] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":1503706817177,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706818643,"request":false,"async":false}
+2017-08-26 08:20:35,149 [MessageReceived:7] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：7
+2017-08-26 08:20:35,616 [3] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{}
+2017-08-26 08:20:35,879 [MessageReceived:8] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：8
+2017-08-26 08:20:42,118 [tokenThread] INFO  SKKey.websocket.TaskWebsocketClient [202] - response:{"id":1503706817177,"type":"keepalive","content":"{}","parameters":{},"createTime":1503706818643,"request":false,"async":false}
+2017-08-26 08:20:42,555 [3] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":11,"type":"pushTask","content":"{\"jxKhdwId\":460151,\"jxSqzhId\":80,\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"\",\"sbyy\":\"\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:17:47\",\"endTime\":\"\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706787364,"request":true,"async":false}
+2017-08-26 08:20:48,133 [3] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:17:47","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:20:49,190 [MessageReceived:9] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：9
+2017-08-26 08:20:49,191 [MessageReceived:9] INFO  SKKey.task.TokenTask [46] - 执行取token任务
+2017-08-26 08:20:49,192 [MessageReceived:9] INFO  SKKey.task.TokenTask [459] - doHandle: start{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:17:47","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:20:49,198 [MessageReceived:9] INFO  SKKey.task.TokenTask [496] - PT_PW T88888888
+2017-08-26 08:20:49,200 [MessageReceived:9] INFO  SKKey.task.TokenTask [81] - ym:https://fpdk.bjsat.gov.cn;ymbb:3.0.10
+2017-08-26 08:20:49,201 [MessageReceived:9] INFO  SKKey.ocx.WebOcxAccess [40] - 打开设备
+2017-08-26 08:21:12,210 [3] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":12,"type":"pushTask","content":"{\"jxKhdwId\":460151,\"jxSqzhId\":80,\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"\",\"sbyy\":\"\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:19:47\",\"endTime\":\"\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706817429,"request":true,"async":false}
+2017-08-26 08:21:12,210 [3] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:19:47","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:21:12,242 [MessageReceived:10] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：10
+2017-08-26 08:21:12,242 [MessageReceived:10] INFO  SKKey.task.TokenTask [46] - 执行取token任务
+2017-08-26 08:21:12,570 [MessageReceived:9] ERROR SKKey.ocx.WebOcxAccess [45] - 打开设备失败：打开设备--未插USBKEY(0xA7)
+2017-08-26 08:21:12,582 [MessageReceived:9] ERROR SKKey.task.TokenTask [98] - 打开设备失败:打开设备--未插USBKEY(0xA7)
+System.Exception: 打开设备失败:打开设备--未插USBKEY(0xA7)
+   在 SKKey.ocx.WebOcxAccess.openAndGetCert(String password) 位置 D:\easy\Work.old\usb_code\SKKey\SKKey\ocx\WebOcxAccess.cs:行号 46
+   在 SKKey.task.TokenTask.getTocken(String ym, String ymbb, String sh, String password, String rwId, String ptPassword) 位置 D:\easy\Work.old\usb_code\SKKey\SKKey\task\TokenTask.cs:行号 94
+2017-08-26 08:21:12,586 [MessageReceived:9] INFO  SKKey.socket.UsbclubOperator [115] - 打开端口对外返回结果：result:1;msg:端口信息格式不正确;
+2017-08-26 08:21:12,586 [MessageReceived:9] INFO  SKKey.task.TokenTask [502] - code ： 907
+2017-08-26 08:21:12,590 [MessageReceived:9] INFO  SKKey.task.TokenTask [516] - doHandle end:{"id":11,"type":"submitTaskResult","content":"{\"jxKhdwId\":\"460151\",\"jxSqzhId\":\"80\",\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"907\",\"sbyy\":\"控件不可用\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:17:47\",\"endTime\":\"\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706787364,"request":true,"async":false}
+2017-08-26 08:21:12,642 [MessageReceived:10] INFO  SKKey.task.TokenTask [459] - doHandle: start{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:19:47","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:21:12,642 [MessageReceived:10] INFO  SKKey.task.TokenTask [496] - PT_PW T88888888
+2017-08-26 08:21:12,642 [MessageReceived:9] INFO  SKKey.websocket.TaskWebsocketClient [218] - sendASyncResponse:{"id":11,"type":"submitTaskResult","content":"{\"jxKhdwId\":\"460151\",\"jxSqzhId\":\"80\",\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"907\",\"sbyy\":\"控件不可用\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:17:47\",\"endTime\":\"\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706787364,"request":false,"async":true}
+2017-08-26 08:21:12,843 [MessageReceived:10] INFO  SKKey.task.TokenTask [81] - ym:https://fpdk.bjsat.gov.cn;ymbb:3.0.10
+2017-08-26 08:21:12,843 [MessageReceived:10] INFO  SKKey.ocx.WebOcxAccess [40] - 打开设备
+2017-08-26 08:21:42,455 [3] INFO  SKKey.websocket.TaskWebsocketClient [155] - 接收消息：{"id":14,"type":"pushTask","content":"{\"jxKhdwId\":460151,\"jxSqzhId\":80,\"nsrsbh\":\"110102681953105\",\"rwlx\":\"2\",\"zt\":\"1\",\"errno\":\"\",\"sbyy\":\"\",\"createTime\":\"2017-07-27 19:49:26\",\"beginTime\":\"2017-08-26 08:17:47\",\"endTime\":\"\",\"param\":\"{\\\"nsrsbh\\\":\\\"110102681953105\\\",\\\"ymbb\\\":\\\"3.0.10\\\",\\\"password\\\":\\\"\\\",\\\"url\\\":\\\"https://fpdk.bjsat.gov.cn\\\"}\",\"result\":\"\",\"jxExchangeLicense\":\"2a3f000c-6afd-4564-9cde-079b4908e860\"}","parameters":{},"createTime":1503706847500,"request":true,"async":false}
+2017-08-26 08:21:42,459 [3] INFO  SKKey.websocket.TaskWebsocketClient [160] - content：{"jxKhdwId":460151,"jxSqzhId":80,"nsrsbh":"110102681953105","rwlx":"2","zt":"1","errno":"","sbyy":"","createTime":"2017-07-27 19:49:26","beginTime":"2017-08-26 08:17:47","endTime":"","param":"{\"nsrsbh\":\"110102681953105\",\"ymbb\":\"3.0.10\",\"password\":\"\",\"url\":\"https://fpdk.bjsat.gov.cn\"}","result":"","jxExchangeLicense":"2a3f000c-6afd-4564-9cde-079b4908e860"}
+2017-08-26 08:21:42,467 [MessageReceived:8] INFO  SKKey.websocket.TaskWebsocketClient [133] - 当前执行线程名称：8
+2017-08-26 08:21:42,467 [MessageReceived:8] INFO  SKKey.task.TokenTask [46] - 执行取token任务

@@ -54,7 +54,7 @@ namespace SKKey.config
 
         public void loadXML()
         {
-            Config.clientType = "usb";// XmlUtil.getNodeText(doc, "//client-type");
+            Config.clientType = "usb";     // XmlUtil.getNodeText(doc, "//client-type");
             string filepath = Path.Combine(FileUtil.getAppPath(), "config.xml");
             log.Info("load 配置文件 " + filepath);
             if (!File.Exists(filepath))
@@ -107,13 +107,14 @@ namespace SKKey.config
 
                 if (map.ContainsKey("PT_PWD"))
                 {
-                    Config.password = map["PT_PWD"];
+                    Config.PT_PWD = map["PT_PWD"];
                 }
 
                 if (map.ContainsKey("password"))
                 {
                     Config.password = map["password"];
                 }
+
                 if (map.ContainsKey("license"))
                 {
                     Config.license = map["license"];
@@ -123,6 +124,7 @@ namespace SKKey.config
                 {
                     Config.taskServerIP = map["taskServerIP"];
                 }
+
                 if (map.ContainsKey("taskServerPort"))
                 {
                     Config.taskServerPort = map["taskServerPort"];

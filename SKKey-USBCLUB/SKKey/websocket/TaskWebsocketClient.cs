@@ -4,18 +4,19 @@ using SKKey.task;
 using SKKey.utils;
 using SuperSocket.ClientEngine;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 using System.Threading;
+using System.Xml.XPath;
 using System;
 using WebSocket4Net;
-using System.Xml.XPath;
+using log4net;
 
 namespace SKKey.websocket
 {
     class TaskWebsocketClient
     {
-        private static readonly log4net.ILog log = 
-            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         
         private static TaskWebsocketClient instance;
 
@@ -86,9 +87,9 @@ namespace SKKey.websocket
             websocket.Open();
         }
 
-        private void send(TaskSocketMessage taskSocketMessage)
+        private void send(TaskSocketMessage tsm)
         {
-            websocket.Send(JsonConvert.SerializeObject(taskSocketMessage));
+            websocket.Send(JsonConvert.SerializeObject(tsm));
         }
         class Login
         {
@@ -102,8 +103,7 @@ namespace SKKey.websocket
 
             public string TIME { get; set; }
         }
-
-
+        
         private void websocket_Opened(object sender, EventArgs e)
         {
             TaskSocketMessage tsm = new TaskSocketMessage();
@@ -125,7 +125,7 @@ namespace SKKey.websocket
                 XPathNavigator itemNav = nodeIterator.Current;
                 _login.TaxCodeList.Add(itemNav.SelectSingleNode("TaxCode").Value);
             }
-            _login.TIME = DateTime.Now.ToString();// "2017-06-30 09:09:09";
+            _login.TIME = DateTime.Now.ToString();              // "2017-06-30 09:09:09";
             tsm.content = JsonConvert.SerializeObject(_login);
             log.Info("ydz：" + JsonConvert.SerializeObject(tsm));
             send(tsm);

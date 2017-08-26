@@ -224,7 +224,6 @@ namespace SKKey.socket
 
         /**
          * 执行usbclub.exe驱动，挂载机柜usb设备
-         * 
          */
         private static void runLocalExe(string exePath, string ip, string sxms)
         {

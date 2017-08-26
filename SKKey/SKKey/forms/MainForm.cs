@@ -1,16 +1,22 @@
 ﻿using SKKey.config;
 using SKKey.ocx;
+using SKKey.socket;
 using SKKey.task;
+using SKKey.utils;
+using SKKey.websocket;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
+using System.Reflection;
+
+using log4net;
 
 namespace SKKey.form
 {
     public partial class MainForm : Form
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
         public MainForm()
         {
@@ -63,8 +69,8 @@ namespace SKKey.form
                 taskServerPortBox.Text = ConfigManager.Instance.Config.taskServerPort;
             }
 
-            if (ConfigManager.Instance.Config.sh != null
-                && ConfigManager.Instance.Config.sh != null
+            if (   ConfigManager.Instance.Config.sh != null
+                && ConfigManager.Instance.Config.PT_PWD != null
                 && ConfigManager.Instance.Config.password != null
                 && ConfigManager.Instance.Config.taskServerIP != null
                 && ConfigManager.Instance.Config.taskServerPort != null)
@@ -154,7 +160,7 @@ namespace SKKey.form
                 {
                     proc.Kill();
                 }
-                catch (Exception exp) { }
+                catch (Exception) { }
             }
         }
 
